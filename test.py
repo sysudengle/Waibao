@@ -15,6 +15,10 @@ class ProductHandler(tornado.web.RequestHandler):
     def get(self):
         self.render("./views/product.html")
 
+class TestHandler(tornado.web.RequestHandler):
+    def get(self):
+        self.render("./views/test.html")
+
 class NewsHandler(tornado.web.RequestHandler):
     def get(self):
         self.render("./views/news.html")
@@ -29,6 +33,7 @@ if __name__ == "__main__":
         (r"/company", CompanyHandler),
         (r"/product", ProductHandler),
         (r"/news", NewsHandler),
+        (r"/test", TestHandler),
         (r"/faq", FaqHandler),
         (r"/images/(.*)", tornado.web.StaticFileHandler, {"path": "./images"},),
     ])
