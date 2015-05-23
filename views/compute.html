@@ -1,0 +1,159 @@
+{% extends 'tpl.html' %}
+
+{% block title %}
+	Home
+{% end %}
+
+{% block l7 %}
+active
+{% end %}
+
+{% block css %}
+<style>
+tr {
+	text-align: left;
+}
+
+.input_part {
+	border-width: 0;
+	border-right-width: 3px;
+	border-color: #337ab7;
+	border-style: solid;
+}
+
+.compute_button {
+	text-align: right;
+}
+</style>
+{% end %}
+
+{% block content %}
+<div class="test_block">
+	<div class="row">
+		<div class="input_part col-md-5">
+			<form class="form-horizontal">
+				<div class="form-group">
+					<label for="inputEmail3" class="col-sm-8 control-label">Total capacity of solar station (MW)</label>
+					<div class="col-sm-4">
+						<input type="" class="form-control" id="c2" placeholder="">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputEmail3" class="col-sm-8 control-label">Average capacity of each panels (W)</label>
+					<div class="col-sm-4">
+						<input type="" class="form-control" id="c3" placeholder="">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputEmail3" class="col-sm-8 control-label">Length of panel (mm)</label>
+					<div class="col-sm-4">
+						<input type="" class="form-control" id="c4" placeholder="">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputEmail3" class="col-sm-8 control-label">Width of panel (mm)</label>
+					<div class="col-sm-4">
+						<input type="" class="form-control" id="c5" placeholder="">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputEmail3" class="col-sm-8 control-label">Arrangement of Panles</label>
+					<div class="col-sm-4">
+						<input type="" class="form-control" id="c6" placeholder="">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputEmail3" class="col-sm-8 control-label">Rows of componets in solar station</label>
+					<div class="col-sm-4">
+						<input type="" class="form-control" id="c7" placeholder="">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputEmail3" class="col-sm-8 control-label">Local electricity price (€)</label>
+					<div class="col-sm-4">
+						<input type="" class="form-control" id="c8" placeholder="">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputEmail3" class="col-sm-8 control-label">Local government subsides (€)</label>
+					<div class="col-sm-4">
+						<input type="" class="form-control" id="c9" placeholder="">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputEmail3" class="col-sm-8 control-label">Designed service life of PV panels (Year)</label>
+					<div class="col-sm-4">
+						<input type="" class="form-control" id="c10" placeholder="">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputEmail3" class="col-sm-8 control-label">Service life already spent of PV panels (Year)</label>
+					<div class="col-sm-4">
+						<input type="" class="form-control" id="c11" placeholder="">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputEmail3" class="col-sm-8 control-label">The anuual cost of cleaning before using robot (€)</label>
+					<div class="col-sm-4">
+						<input type="" class="form-control" id="c12" placeholder="">
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-offset-2 col-sm-10 compute_button">
+						<button type="submit" class="btn btn-success">Compute</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="col-md-7">
+			<table class="table table-bordered table-hover">
+				<thead>
+					<tr>
+						<th>Item</th>
+						<th>Value</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="active">
+						<td>Anuual power generation (KWh)</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Amount of panels</td>
+						<td></td>
+					</tr>
+					<tr class="success">
+						<td>Widtd of componet (mm)</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Average cleaning distance for each robot (meter)</td>
+						<td></td>
+					</tr>
+					<tr class="info">
+						<td>Anuual income improvement (€)</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>The actual remaining service life (Year)</td>
+						<td></td>
+					</tr>
+					<tr class="warning">
+						<td>Increased service life by daily cleaning (Year)</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+					</tr>
+				</tbody>
+
+			</table>
+		</div>
+	</div>
+</div>
+{% end %}

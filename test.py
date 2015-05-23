@@ -27,6 +27,10 @@ class FaqHandler(tornado.web.RequestHandler):
     def get(self):
         self.render("./views/faq.html")
 
+class ComputeHandler(tornado.web.RequestHandler):
+    def get(self):
+        self.render("./views/compute.html")
+
 if __name__ == "__main__":
     application = tornado.web.Application([
         (r"/", MainHandler),
@@ -35,6 +39,7 @@ if __name__ == "__main__":
         (r"/news", NewsHandler),
         (r"/test", TestHandler),
         (r"/faq", FaqHandler),
+        (r"/compute", ComputeHandler),
         (r"/images/(.*)", tornado.web.StaticFileHandler, {"path": "./images"},),
     ])
 
