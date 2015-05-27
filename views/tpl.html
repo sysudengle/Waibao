@@ -14,9 +14,12 @@
 	{% block css %}
 	{% end %}
 	<style>
+		@font-face {
+		  font-family: Orbitron;
+		  src: url(/css/Orbitron-Regular.ttf);
+		}
 		body { 
- transform: scale(0.75);
-   transform-origin: 10% 10%;
+			font-family: 'Orbitron', sans-serif;
 			padding-top: 70px; 
 			background-color: #d7d6d6
 		}
@@ -52,11 +55,31 @@
 		}
 		.nav_container {
 			text-align: center;
+			position: relative;
+		}
+
+		.nav_container > li > a:hover{
+			color: white;
+			background-color: transparent;
+		}
+
+		.nav_button {
+			font-size: 20px;
+			font-weight: 600;
+		}
+
+		#moving_block {
+			width: 120px;
+			height: 50px;
+			background-color: #337ab7;
+			left: 0;
+			top: 0;
+			position: absolute;
 		}
 		.test_block {
 			margin-bottom: 2px;
 			background-color: #fff;
-			background-image: url("/images/contemporary_china_2.png");
+			background-image: url("/images/symphony.png");
 			background-repeat: repeat;
 			text-align: center;
 			padding: 10px 10px 10px 10px;
@@ -219,6 +242,11 @@
 			width: 32%;
 		}
 
+		.navbar-inverse .navbar-brand:hover, 
+		.navbar-inverse .navbar-brand:focus {
+		  background-color: transparent;
+		  color: #999999;
+		}
 	</style>
 </head>
 
@@ -245,6 +273,7 @@
 	<!--<div class="test_block">
 		<img src="/images/logo.png" />
 	</div>-->
+
 	<div class="test_block nav_block">
 		<ul class="nav nav-pills nav_container">
 			<li role="presentation">
@@ -252,13 +281,22 @@
 					<img id="logo" src="/images/logoo.jpg" />
 				</div>
 			</li>
-			<li role="presentation" class="{% block l1 %}{% end %}"><a href="/">HOME</a></li>
-		  	<li role="presentation" class="{% block l2 %}{% end %}"><a href="/company">COMPANY</a></li>
-			<li role="presentation" class="{% block l3 %}{% end %}"><a href="/product"> PRODUCT</a></li>
-		  	<li role="presentation" class="{% block l4 %}{% end %}"><a href="/test">TEST&RESULT</a></li>
-		  	<li role="presentation" class="{% block l5 %}{% end %}"><a href="/news">NEWS</a></li>
-		  	<li role="presentation"	class="{% block l6 %}{% end %}"><a href="/faq">FAQ</a></li>
-		  	<li role="presentation"	class="{% block l7 %}{% end %}"><a href="/compute">COMPUTE</a></li>
+			<div id="moving_block"></div>
+			<!--<li role="presentation" class="nav_button {% block l1 %}{% end %}"><a href="/">HOME</a></li>
+		  	<li role="presentation" class="nav_button {% block l2 %}{% end %}"><a href="/company">COMPANY</a></li>
+			<li role="presentation" class="nav_button {% block l3 %}{% end %}"><a href="/product"> PRODUCT</a></li>
+		  	<li role="presentation" class="nav_button {% block l4 %}{% end %}"><a href="/test">TEST&RESULT</a></li>
+		  	<li role="presentation" class="nav_button {% block l5 %}{% end %}"><a href="/news">NEWS</a></li>
+		  	<li role="presentation"	class="nav_button {% block l6 %}{% end %}"><a href="/faq">FAQ</a></li>
+			<li role="presentation"	class="nav_button {% block l7 %}{% end %}"><a href="/compute">COMPUTE</a></li>-->
+
+			<li role="presentation" id="{% block nl %}{% end %}" class="nav_button"><a href="/">HOME</a></li>
+		  	<li role="presentation" id="{% block nl %}{% end %}" class="nav_button"><a href="/company">COMPANY</a></li>
+			<li role="presentation" id="{% block nl %}{% end %}" class="nav_button"><a href="/product"> PRODUCT</a></li>
+		  	<li role="presentation" id="{% block nl %}{% end %}" class="nav_button"><a href="/test">TEST&RESULT</a></li>
+		  	<li role="presentation" id="{% block nl %}{% end %}" class="nav_button"><a href="/news">NEWS</a></li>
+		  	<li role="presentation"	id="{% block nl %}{% end %}" class="nav_button"><a href="/faq">FAQ</a></li>
+		  	<li role="presentation"	id="{% block nl %}{% end %}" class="nav_button"><a href="/compute">COMPUTE</a></li>
 		</ul>
 	</div>
 
@@ -291,6 +329,7 @@
 
 <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
 <script src="//blueimp.github.io/Bootstrap-Image-Gallery/js/bootstrap-image-gallery.js"></script>
+<script src="/js/blockmove.js"></script>
 {% block js %}
 {% end %}
 

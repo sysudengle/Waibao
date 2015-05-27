@@ -41,6 +41,8 @@ if __name__ == "__main__":
         (r"/faq", FaqHandler),
         (r"/compute", ComputeHandler),
         (r"/images/(.*)", tornado.web.StaticFileHandler, {"path": "./images"},),
+        (r"/css/(.*)", tornado.web.StaticFileHandler, {"path": "./css"},),
+        (r"/js/(.*)", tornado.web.StaticFileHandler, {"path": "./js"},),
     ])
 
     #application.add_handlers(r"^solbrighttech\.com$", [
