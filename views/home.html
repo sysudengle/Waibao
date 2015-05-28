@@ -6,6 +6,14 @@
 
 {% block n1 %}nl{% end %}
 
+{% block css %}
+<style>
+.home_can > p {
+	font-weight: 800;
+	font-size: 22px;
+}
+</style>
+{% end %}
 
 {% block content %}
 
@@ -48,24 +56,6 @@
 	</div>
 
 	<div class="test_block">
-		<div>
-			<h3> 
-				What We Can Do For You?
-			</h3>
-			<ol>
-				<li class="text-left">We can provide you with the most professional customized cleaning solutions </li>
-				<li class="text-left">We can help your company to maximize resource efficiency</li>
-				<li class="text-left">We can help you achieve more power generation efficiency </li>
-				<li class="text-left">We can help you lower your operation and maintenance costs</li>
-				<li class="text-left">We can help you to be more environmentally adaptive</li>
-			</ol>
-
-			<strong>Choose Sol-Bright, Make it right! </strong>
-
-		</div>
-	</div>
-
-	<div class="test_block">
 		<div class="text_block">
 			<h3>Sol-Bright Tech</h3>
 			<p>
@@ -74,6 +64,23 @@
 			<button class="btn btn-success btn-lg">
 			Contact
 			</button>
+		</div>
+	</div>
+
+	<div class="test_block">
+		<div class="home_can">
+			<p> 
+				What We Can Do For You?
+			</p>
+			<ul>
+				<li class="text-left">We can provide you with the most professional customized cleaning solutions </li>
+				<li class="text-left">We can help your company to maximize resource efficiency</li>
+				<li class="text-left">We can help you achieve more power generation efficiency </li>
+				<li class="text-left">We can help you lower your operation and maintenance costs</li>
+				<li class="text-left">We can help you to be more environmentally adaptive</li>
+			</ul>
+
+
 		</div>
 	</div>
 {% end %}

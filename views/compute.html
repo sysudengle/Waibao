@@ -26,6 +26,10 @@ tr {
 .compute_button {
 	text-align: right;
 }
+
+#c6 {
+	width: 90%;
+}
 </style>
 {% end %}
 
@@ -113,7 +117,7 @@ tr {
 				</div>
 				<div class="form-group">
 					<div class="col-sm-offset-2 col-sm-10 compute_button">
-						<button type="submit" class="btn btn-success">Compute</button>
+						<button type="button" class="compute_submit btn btn-success">Compute</button>
 					</div>
 				</div>
 			</form>
@@ -129,83 +133,83 @@ tr {
 				<tbody>
 					<tr class="active">
 						<td>Anuual power generation (KWh)</td>
-						<td></td>
+						<td id="e2"></td>
 					</tr>
 					<tr>
 						<td>Amount of panels</td>
-						<td></td>
+						<td id="e3"></td>
 					</tr>
 					<tr class="success">
-						<td>Widtd of componet (mm)</td>
-						<td></td>
+						<td>Width of componet (mm)</td>
+						<td id="e6"></td>
 					</tr>
 					<tr>
 						<td>Average cleaning distance for each robot (meter)</td>
-						<td></td>
+						<td id="e7"></td>
 					</tr>
 					<tr class="info">
 						<td>Anuual income improvement (€)</td>
-						<td></td>
+						<td id="e9"></td>
 					</tr>
 					<tr>
 						<td>The actual remaining service life (Year)</td>
-						<td></td>
+						<td id="e10"></td>
 					</tr>
 					<tr class="warning">
 						<td>Increased service life by daily cleaning (Year)</td>
-						<td></td>
+						<td id="e11"></td>
 					</tr>
 					<tr>
 						<td>Saved cleaning cost in future</td>
-						<td></td>
+						<td id="e12"></td>
 					</tr>
 					<tr class="danger">
 						<td>Total maintenance cost in futrue</td>
-						<td></td>
+						<td id="e14"></td>
 					</tr>
 					<tr>
 						<td>Anuual improvement generation by Sol-Bright project (KWh)</td>
-						<td></td>
+						<td id="g2"></td>
 					</tr>
 					<tr class="warning">
 						<td>Total surface area of panels (square meter)</td>
-						<td></td>
+						<td id="g3"></td>
 					</tr>
 					<tr>
 						<td>Project cost (€)</td>
-						<td></td>
+						<td id="g7"></td>
 					</tr>
 					<tr class="info">
 						<td>Anuual maintenance cost(€)</td>
-						<td></td>
+						<td id="g8"></td>
 					</tr>
 					<tr>
 						<td>Return on investment period (Month)</td>
-						<td></td>
+						<td id="g9"></td>
 					</tr>
 					<tr class="success">
 						<td>The actual ervice life after daily cleaning (Year)</td>
-						<td></td>
+						<td id="g10"></td>
 					</tr>
 					<tr>
 						<td>Income improvement by increased service life (€)</td>
-						<td></td>
+						<td id="g11"></td>
 					</tr>
 					<tr class="active">
 						<td>Income improvement by increased generation rate (€)</td>
-						<td></td>
+						<td id="g12"></td>
 					</tr>
 					<tr>
 						<td>Total revenue in future</td>
-						<td></td>
+						<td id="g13"></td>
 					</tr>
 					<tr class="success">
 						<td>Total investment</td>
-						<td></td>
+						<td id="g14"></td>
 					</tr>
 					<tr>
 						<td>ROI rate</td>
-						<td></td>
+						<td id="g15"></td>
 					</tr>
 				</tbody>
 
@@ -213,4 +217,8 @@ tr {
 		</div>
 	</div>
 </div>
+{% end %}
+
+{% block js %}
+<script src="/js/compute.js"></script>
 {% end %}

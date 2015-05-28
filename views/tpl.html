@@ -16,7 +16,7 @@
 	<style>
 		@font-face {
 		  font-family: Orbitron;
-		  src: url(/css/Orbitron-Regular.ttf);
+		  src: url(/css/Sanchez-Regular.ttf);
 		}
 		body { 
 			font-family: 'Orbitron', sans-serif;
@@ -68,7 +68,7 @@
 		}
 
 		.nav_button {
-			font-size: 20px;
+			font-size: 15px;
 			font-weight: 600;
 		}
 
@@ -157,6 +157,12 @@
 
 		.gallery_block {
 			text-align: left;
+		}
+
+		.copyright_block2 > .choose_text {
+			font-weight: 800;
+			font-size: 20px;
+			color: #2E7A3C;
 		}
 
 		.copyright_block {
@@ -307,7 +313,11 @@
 	{% block content %}
 	{% end %}
 
-	<div class="test_block copyright_block">
+	<div class="test_block copyright_block2">
+		<p class="choose_text">Choose Sol-Bright, Make it right! </p>
+		<p>Copyright 2016 Sol-Bright Tech | All Rights Reserved | </p>
+	</div>
+	<!--<div class="test_block copyright_block">
 		<div class="row">
 			<div class="col-md-6 company_col">
 				<h4>COMPANY</h4>
@@ -323,7 +333,7 @@
 			</div>
 		</div>
 		<p>Copyright 2016 Sol-Bright Tech | All Rights Reserved | </p>
-	</div>
+	</div>-->
 </div>
 </body>
 
