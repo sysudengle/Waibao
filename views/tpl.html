@@ -55,14 +55,22 @@
 		}
 		.nav_container {
 			text-align: center;
+			/*display: inline-block;*/
+			float: left;
 			position: relative;
 		}
 
-		.nav_container > li > a {
+		#cal_button > a:hover{
+			color: black;
+		}
+		#cal_button:hover{
+			background-color: #4cae4c;	
+		}
+		.nav_container > .nav_button > a {
 			color: #337ab7;
 		}
 
-		.nav_container > li > a:hover{
+		.nav_container > .nav_button > a:hover{
 			color: white;
 			background-color: transparent;
 		}
@@ -97,12 +105,13 @@
 
 		.nav_block {
 			padding: 10px 10px 10px 10px;
+			text-align: left;
+			vertical-align: middle;
 		}
 
 		.logo_wrapper {
-			width: 100%;
-			margin-right: 15%;
-			padding-right: 15%;
+			width: 10%;
+			display: inline-block;
 		}
 
 		#logo {
@@ -263,6 +272,12 @@
 		  background-color: transparent;
 		  color: #999999;
 		}
+		.clearer {
+			clear: both;
+		}
+		.calbtn {
+			color: white;
+		}
 	</style>
 </head>
 
@@ -291,12 +306,10 @@
 	</div>-->
 
 	<div class="test_block nav_block">
+		<!--<div class="logo_wrapper">
+			<img id="logo" src="/images/logoo.jpg" />
+		</div>-->
 		<ul class="nav nav-pills nav_container">
-			<li role="presentation">
-				<div class="logo_wrapper">
-					<img id="logo" src="/images/logoo.jpg" />
-				</div>
-			</li>
 			<div id="moving_block"></div>
 			<!--<li role="presentation" class="nav_button {% block l1 %}{% end %}"><a href="/">HOME</a></li>
 		  	<li role="presentation" class="nav_button {% block l2 %}{% end %}"><a href="/company">COMPANY</a></li>
@@ -306,14 +319,22 @@
 		  	<li role="presentation"	class="nav_button {% block l6 %}{% end %}"><a href="/faq">FAQ</a></li>
 			<li role="presentation"	class="nav_button {% block l7 %}{% end %}"><a href="/compute">COMPUTE</a></li>-->
 
+			<li role="presentation" >
+				<img id="logo" src="/images/logoo.jpg" />
+			</li>
 			<li role="presentation" id="{% block n1 %}{% end %}" class="nav_button"><a href="/">HOME</a></li>
 		  	<li role="presentation" id="{% block n2 %}{% end %}" class="nav_button"><a href="/company">COMPANY</a></li>
 			<li role="presentation" id="{% block n3 %}{% end %}" class="nav_button"><a href="/product"> PRODUCT</a></li>
 		  	<li role="presentation" id="{% block n4 %}{% end %}" class="nav_button"><a href="/test">TEST&RESULT</a></li>
 		  	<li role="presentation" id="{% block n5 %}{% end %}" class="nav_button"><a href="/news">NEWS</a></li>
 		  	<li role="presentation"	id="{% block n6 %}{% end %}" class="nav_button"><a href="/faq">FAQ</a></li>
-		  	<li role="presentation"	id="{% block n7 %}{% end %}" class="nav_button"><a href="/compute">COMPUTE</a></li>
+		  	<li role="presentation" id="cal_li"><a href="/compute" class="btn btn-success calbtn" role="button">CALCULATION</a></li>
+			
+
+			<!--<li role="presentation"	id="{% block n7 %}{% end %}" class="nav_button"><a href="/compute">CALCULATION</a></li>-->
 		</ul>
+		<div class="clearer">
+		</div>
 	</div>
 
 	{% block content %}
