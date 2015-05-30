@@ -88,6 +88,8 @@
 			left: 0;
 			top: 0;
 			position: absolute;
+			border-radius:15px;
+			-moz-border-radius:15px; /* Old Firefox */
 		}
 
 		#nl {
@@ -119,6 +121,9 @@
 			height: 50px;
 		}
 
+		#logo_li {
+			padding-right: 30px;
+		}
 		.image_block {
 			padding-top: 20px;
 			padding-bottom: 20px;
@@ -319,7 +324,7 @@
 		  	<li role="presentation"	class="nav_button {% block l6 %}{% end %}"><a href="/faq">FAQ</a></li>
 			<li role="presentation"	class="nav_button {% block l7 %}{% end %}"><a href="/compute">COMPUTE</a></li>-->
 
-			<li role="presentation" >
+			<li role="presentation"  id="logo_li">
 				<img id="logo" src="/images/logoo.jpg" />
 			</li>
 			<li role="presentation" id="{% block n1 %}{% end %}" class="nav_button"><a href="/">HOME</a></li>

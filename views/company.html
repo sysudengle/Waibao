@@ -27,14 +27,18 @@ active
 
 .company2 p:first-letter, 
 .company1 p:first-letter {
-	font-size: 40px;	
+	margin-top: 8px;
+	line-height: 0.8;
+	font-size: 2em;	
 	float: left;
 	font-weight: 800;
 	padding-right: 5px;
+	padding-bottom: 0;
 }
 
 .company2 p,
 .company1 p {
+	clear: both;
 	font-size: 19px;
 }
 
@@ -59,25 +63,49 @@ active
 }
 
 h3 {
+	text-align: left;
 	font-weight: 800;
+	margin-top: 5px;
+	margin-bottom: 3px;
 }
 
 .com3_left img {
-	height: 100%;
 	width: 100%;
 }
 
 .com3_right img {
-	height: 50%;
 	width: 100%;
 	max-width: none; /* 图片不缩放 */
 }
 
-.com3_left,
-.com3_right {
-	overflow: hidden;
-	height: 100%;
+.com3_left {
 }
+.com3_right {
+}
+
+.clearer {
+	clear: both;
+}
+
+.container2 {
+	overflow: hidden;
+}
+
+.col1 {
+	padding-bottom:2000px;
+    margin-bottom:-2000px;
+	width: 57%;
+	float: left;
+}
+
+.col2 {
+	padding-bottom:2000px;
+    margin-bottom:-2000px;
+	width: 42%;
+	height: 100%;
+	float: left;
+}
+
 </style>
 {% end %}
 
@@ -197,16 +225,17 @@ h3 {
 </div>
 <div class="test_block">
 	<h3>Our Footprint</h3>
-	<div class="row company3">
-		<div class="col-md-6 com3_left">
-			<img src="images/co0.jpg" >
-		</div>
-		<div class="col-md-6 com3_right">
-			<img src="images/co4.jpg" >
-			<img src="images/co5.jpg" >
-		</div>
-		</div>
-		</div>
+
+	<div class="container2">
+			<div class="col1 com3_left">
+				<img src="images/co0.jpg" >
+			</div>
+			<div class="col2 com3_right">
+				<img id="cp1" src="images/co4.jpg" >
+				<img id="cp2" src="images/co5.jpg" >
+				<img id="cp3" src="images/co6.jpg" >
+			</div>
+			<div class="clearer"></div>
 	</div>
 </div>
 <!--<div class="test_block">
