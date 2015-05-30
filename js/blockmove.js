@@ -1,9 +1,12 @@
 $(function() {
 	nav_li = $('#nl');
-	//$("#moving_block").css({'left' : (parseInt(nav_li.position().left) + parseInt($('.logo_wrapper').css('margin-right'))) + 'px', 'width' : nav_li.css("width")})
-	$("#moving_block").css({'left' : (parseInt(nav_li.position().left)) + 'px', 'width' : nav_li.css("width")})
-	nav_font = $('#nl > a');
-	nav_font.css({'color' : 'white'});
+	if(nav_li.length)
+	{
+		//$("#moving_block").css({'left' : (parseInt(nav_li.position().left) + parseInt($('.logo_wrapper').css('margin-right'))) + 'px', 'width' : nav_li.css("width")})
+		$("#moving_block").css({'left' : (parseInt(nav_li.position().left)) + 'px', 'width' : nav_li.css("width")})
+		nav_font = $('#nl > a');
+		nav_font.css({'color' : 'white'});
+	}
 	$('.nav_container .nav_button a').mouseenter(function(){
 		var parent = $(this).parent();  
         left = parent.position().left;  

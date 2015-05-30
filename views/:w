@@ -12,78 +12,19 @@ active
 
 {% block css %}
 <style>
-
-.com2_right > p,
-.com1_left2 > p,
-.com1_right > p {
-	text-align: left;
+.com1_left > img {
+	width: 90%;
 }
 
-.com1_left > img,
-.com1_right2 > img, 
-.com2_left > img {
-	width: 100%;
-}
-
-.company2 p:first-letter, 
-.company1 p:first-letter {
-	font-size: 40px;	
-	float: left;
-	font-weight: 800;
-	padding-right: 5px;
-}
-
-.company2 p,
-.company1 p {
-	font-size: 19px;
-}
-
-#p1:first-letter {
-	color: rgb(227, 185, 15);
-}
-
-#p2:first-letter {
-	color: rgb(47, 128, 9);
-}
-
-#p3:first-letter {
-	color: rgb(37, 68, 99);
-}
-
-#p4:first-letter {
-	color: rgb(172, 36, 206);
-}
-
-#p5:first-letter {
-	color: rgb(226, 30, 7);
-}
-
-h3 {
-	font-weight: 800;
-}
-
-.com3_left img {
-	height: 100%;
-	width: 100%;
-}
-
-.com3_right img {
-	height: 50%;
-	width: 100%;
-	max-width: none; /* 图片不缩放 */
-}
-
-.com3_left,
-.com3_right {
-	overflow: hidden;
-	height: 100%;
+.com1_right2 > img {
+	width: 90%;
 }
 </style>
 {% end %}
 
 {% block content %}
 
-<!--	<div class="test_block image_block">		
+	<div class="test_block image_block">		
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
 			<!-- Indicators -->
 			<ol class="carousel-indicators">
@@ -148,7 +89,7 @@ h3 {
 
 
 		</div>
-	</div>-->
+	</div>
 {% end %}
 {% block content %}
 <div class="test_block">
@@ -158,54 +99,23 @@ h3 {
 				<img src="images/co1.jpg" >
 			</div>
 			<div class="com1_left2">
-				<p id="p1">
+				<p>
 				After many researches, trial and errors, Sol-Bright Technology successfully developed their first generation of intelligent cleaning robot in 2013. The advanced technology behind the innovation has obtained patents both domestically and internationally. It is also highly acknowledged by many industry experts and has been recognized at SNEC expo in 2015.  
 				</p>
 			</div>
 		</div>
 		<div class="col-md-6">
 			<div class="com1_right">
-				<p id="p2">
+				<p>
 				We are one of the world´s leading professional manufacturers that builds the most practical and intelligent robot to clean photovoltaic modules.
 				</p>
-				<p id="p3">
+				<p>
 				We focus on value-adding and customized services in the solar industry. Our company focuses on R&D and services to continuously bring the best technological solutions to our valued customers. 
 				</p>
 			</div>
 			<div class="com1_right2">
 				<img src="images/co2.jpg" >
 			</div>
-		</div>
-	</div>
-	<div class="row company2">
-		<div class="col-md-6">
-			<div class="com2_left">
-				<img src="images/co3.jpg" >
-			</div>
-		</div>
-		<div class="col-md-6">
-			<div class="com2_right">
-				<p id="p4">
-				Sol-Bright Technology provides the turnkey solution to utility scale solar power plants. Our team provides customized manufacturing, assembling and provides on site installation with professional after-sales maintenance services to our customers.
-				</p>
-				<p id="p5">
-				We abide by the values of integrity, technology oriented, and continuous innovation to provide the best solution to our clients. We have committed ourselves to the mission of developing green energy resources to build a greener world for tomorrow. 
-				</p>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="test_block">
-	<h3>Our Footprint</h3>
-	<div class="row company3">
-		<div class="col-md-6 com3_left">
-			<img src="images/co0.jpg" >
-		</div>
-		<div class="col-md-6 com3_right">
-			<img src="images/co4.jpg" >
-			<img src="images/co5.jpg" >
-		</div>
-		</div>
 		</div>
 	</div>
 </div>
