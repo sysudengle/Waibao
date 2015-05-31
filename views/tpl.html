@@ -283,6 +283,10 @@
 		.calbtn {
 			color: white;
 		}
+		#cal_li {
+			float: right;
+			margin-top: 5px;
+		}
 	</style>
 </head>
 
@@ -297,7 +301,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 </button>
-            <a class="navbar-brand brand_text" href="/test">
+            <a class="navbar-brand brand_text" href="/">
 				<span class="glyphicon glyphicon-align-left glyphicon-plane " aria-hidden="true"></span>
 				Sol-Bright Technology
 			</a>
@@ -333,11 +337,11 @@
 		  	<li role="presentation" id="{% block n4 %}{% end %}" class="nav_button"><a href="/test">TEST&RESULT</a></li>
 		  	<li role="presentation" id="{% block n5 %}{% end %}" class="nav_button"><a href="/news">NEWS</a></li>
 		  	<li role="presentation"	id="{% block n6 %}{% end %}" class="nav_button"><a href="/faq">FAQ</a></li>
-		  	<li role="presentation" id="cal_li"><a href="/compute" class="btn btn-success calbtn" role="button">CALCULATION</a></li>
 			
 
 			<!--<li role="presentation"	id="{% block n7 %}{% end %}" class="nav_button"><a href="/compute">CALCULATION</a></li>-->
 		</ul>
+		<div role="presentation" id="cal_li"><a href="/compute" class="btn btn-success calbtn" role="button">CALCULATION</a></div>
 		<div class="clearer">
 		</div>
 	</div>
@@ -369,7 +373,7 @@
 </div>
 </body>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="/js/jquery.min.js"></script>
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
