@@ -16,6 +16,10 @@ Sol-Bright Technology
 .home_can li {
 	font-size: 17px;
 }
+
+#video {
+	width: 100%;
+}
 </style>
 {% end %}
 
@@ -30,21 +34,46 @@ Sol-Bright Technology
 				<ol class="carousel-indicators">
 					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+					<li data-target="#myCarousel" data-slide-to="3"></li>
 				</ol>
 
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner" role="listbox">
 					<div class="item active">
-						<img src="images/1.png" alt="Chania">
+						<img src="images/h1.jpg" alt="Chania">
 						<div class="video_link transbox">
 							<p>
-							<a href="#">TO SEE THE DETAILS</a>
+							<a href="/product">TO SEE THE DETAILS</a>
 							</p>
 						</div>
 					</div>
 
 					<div class="item">
-						<img src="images/2.png" alt="Chania">
+						<img src="images/h2.jpg" alt="Chania">
+						<div class="video_link transbox">
+							<p>
+							<a href="/product">TO SEE THE DETAILS</a>
+							</p>
+						</div>
+					</div>
+
+					<div class="item">
+						<img src="images/h3.jpg" alt="Chania">
+						<div class="video_link transbox">
+							<p>
+							<a href="/product">TO SEE THE DETAILS</a>
+							</p>
+						</div>
+					</div>
+
+					<div class="item">
+						<img src="images/h4.jpg" alt="Chania">
+						<div class="video_link transbox">
+							<p>
+							<a href="/product">TO SEE THE DETAILS</a>
+							</p>
+						</div>
 					</div>
 
 				</div>
@@ -64,19 +93,31 @@ Sol-Bright Technology
 
 
 	<div class="test_block">
-		<div class="home_can">
-			<p> 
-				What We Can Do For You?
-			</p>
-			<ul>
-				<li class="text-left">We can provide you with the most professional customized cleaning solutions </li>
-				<li class="text-left">We can help your company to maximize resource efficiency</li>
-				<li class="text-left">We can help you achieve more power generation efficiency </li>
-				<li class="text-left">We can help you lower your operation and maintenance costs</li>
-				<li class="text-left">We can help you to be more environmentally adaptive</li>
-			</ul>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="home_can">
+					<p> 
+						What We Can Do For You?
+					</p>
+					<ul>
+						<li class="text-left">We can provide you with the most professional customized cleaning solutions </li>
+						<li class="text-left">We can help your company to maximize resource efficiency</li>
+						<li class="text-left">We can help you achieve more power generation efficiency </li>
+						<li class="text-left">We can help you lower your operation and maintenance costs</li>
+						<li class="text-left">We can help you to be more environmentally adaptive</li>
+					</ul>
 
 
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div align="center" id="video" class="embed-responsive embed-responsive-16by9">
+<!--					<video autoplay loop class="embed-responsive-item">
+						<source src="http://www.youtube.com/embed/aToGR-1fmHg?autoplay=1">
+					</video>-->
+					<iframe autoplay class="embed-responsive-item" src="http://www.youtube.com/embed/aToGR-1fmHg?autoplay=1"></iframe>
+				</div>
+			</div>
 		</div>
 	</div>
 
@@ -86,9 +127,6 @@ Sol-Bright Technology
 			<p>
 			Sol-Bright Tech is one of the world’s leading professional manufacturers that builds the most practical and intelligent robot to clean photovoltaic modules.
 			</p>
-			<button class="btn btn-success btn-lg">
-			Contact
-			</button>
 		</div>
 	</div>
 {% end %}
