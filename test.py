@@ -84,9 +84,6 @@ if __name__ == "__main__":
         (r"/js/(.*)", tornado.web.StaticFileHandler, {"path": "./js"},),
     ])
 
-    application.add_handlers(r"^a\.com$", [
-        (r"/", DomainHandler),
-    ])
     #application.add_handlers(r"^solbrighttech\.com$", [
     #    (r"/", MainHandler),
     #    (r"/company", CompanyHandler),
