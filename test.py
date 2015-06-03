@@ -31,20 +31,62 @@ class ComputeHandler(tornado.web.RequestHandler):
     def get(self):
         self.render("./views/compute.html")
 
+
+class CHNMainHandler(tornado.web.RequestHandler):
+    def get(self):
+        self.render("./views/cnhome.html")
+
+class CHNCompanyHandler(tornado.web.RequestHandler):
+    def get(self):
+        self.render("./views/cncompany.html")
+
+class CHNProductHandler(tornado.web.RequestHandler):
+    def get(self):
+        self.render("./views/cnproduct.html")
+
+class CHNTestHandler(tornado.web.RequestHandler):
+    def get(self):
+        self.render("./views/cntest.html")
+
+class CHNNewsHandler(tornado.web.RequestHandler):
+    def get(self):
+        self.render("./views/cnnews.html")
+
+class CHNFaqHandler(tornado.web.RequestHandler):
+    def get(self):
+        self.render("./views/cnfaq.html")
+
+class CHNComputeHandler(tornado.web.RequestHandler):
+    def get(self):
+        self.render("./views/cncompute.html")
+
 if __name__ == "__main__":
     application = tornado.web.Application([
-        (r"/", MainHandler),
+        (r"/^solbrighttech.com$", MainHandler),
         (r"/company", CompanyHandler),
         (r"/product", ProductHandler),
         (r"/news", NewsHandler),
         (r"/test", TestHandler),
         (r"/faq", FaqHandler),
         (r"/compute", ComputeHandler),
+
+
+        (r"/cn", CHNMainHandler),
+        (r"/cn/company", CHNCompanyHandler),
+        (r"/cn/product", CHNProductHandler),
+        (r"/cn/news", CHNNewsHandler),
+        (r"/cn/test", CHNTestHandler),
+        (r"/cn/faq", CHNFaqHandler),
+        (r"/cn/compute", CHNComputeHandler),
+
         (r"/images/(.*)", tornado.web.StaticFileHandler, {"path": "./images"},),
         (r"/css/(.*)", tornado.web.StaticFileHandler, {"path": "./css"},),
         (r"/js/(.*)", tornado.web.StaticFileHandler, {"path": "./js"},),
     ])
 
+    application.add_handlers(r"^a\.com$", [
+        (r"/", DomainHandler),
+    ])
     #application.add_handlers(r"^solbrighttech\.com$", [
     #    (r"/", MainHandler),
     #    (r"/company", CompanyHandler),

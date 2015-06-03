@@ -1,0 +1,61 @@
+{% extends 'tpl.html' %}
+
+{% block title %}
+Sol-Bright Technology
+{% end %}
+
+{% block n6 %}nl{% end %}
+
+{% block l6 %}
+active
+{% end %}
+
+{% block content %}
+<div class="test_block">		
+	<div class="panel-group text_block" id="accordion" role="tablist" aria-multiselectable="true">
+		<div class="panel panel-default">
+			<div class="panel-heading text-left" role="tab" id="headingOne">
+				<h4 class="panel-title">
+					<a class="text-left" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						1. Does the Sol-Bright Tech Robot detect, or sense, special environmental conditions, that will stop the cleaning operation? For example, can it be programmed to do periodic cleaning during night hours, to avoid shadowing? Or can it work when snowing?
+					</a>
+				</h4>
+			</div>
+			<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+				<div class="panel-body text-left">
+					The Sol-Bright Tech has a fully up-gradable, on-board, electronic communication and sensing system (CSS). After improved the built-in battery, robot can operate in the temperature of up to 70℃ and down to -40℃. As part of this improvement package, temperature sensor system will ensure that robot works under allowed temperature to avoid breakdown, in addition, the temperature sensor will detect abnormal temperatures in the panel, while it is being cleaned. This will allow accurate pinpointing of faulty panels for easy change-over.
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading text-left" role="tab" id="headingTwo">
+				<h4 class="panel-title">
+					<a class="text-left collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						2. What are the dimensions (especially the cleaning area) and weight of Sol-Bright Tech Robot?
+					</a>
+				</h4>
+			</div>
+			<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+				<div class="panel-body text-left">
+					Sol-Bright Robot is capable of cleaning panel arrays of up to 5.35 m width and a length of up to 800m. Various scale can be customized for the special measurement of panel arrays. For most mono-crystalline panel designs, this means a single unit will be dedicated to a 75 KW array string. The system weighs less than 50 kg, and the modified material will further reduce this weight.
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading text-left" role="tab" id="headingThree">
+				<h4 class="panel-title">
+					<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+						3. How is it installed and how does it move through the module surface and array of modules? Can it be physically moved from one array of modules to others, or do we need a cleaning system per array?
+					</a>
+				</h4>
+			</div>
+			<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+				<div class="panel-body text-left">
+					The robot is installed onto an array with the use of a row of rubber wheel that fixes the whole robot to the top of solar module-frame, and other rows of rubber wheels perpendicular to the panel surface will bear the weight averagely to keep the whole package in balance. These wheels are all set up to move along the module-frame so that robot does not have any rest weight on the panel surfaces themselves. Robot only can moved one array of modules to others which are parallel with former via bridge connection. This system is designed to be cost-effective with a single robot dedicated to each row. There are a number of reasons for this, the 1st being that all operational labor requirements are avoided. This is an often overlooked necessity of desert cleaning systems, when temperatures can remain at more than 40° during the night, and labor supply is scarce and expensive to maintain and supervise. Similar situation occurs in the developed countries, labors are not allowed to work under high temperature. The second is that by dedicating one system per row, the dangers of manually moving the system from one road to another, or running out of operational capacity during badly weather periods is completely avoided. 
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% end %}

@@ -1,0 +1,93 @@
+{% extends 'tpl.html' %}
+
+{% block title %}
+	Home
+{% end %}
+
+{% block n5 %}nl{% end %}
+
+{% block l5 %}
+active
+{% end %}
+
+
+{% block css %}
+<style>
+	.news_left_image_part > img {
+		width: 100%;
+		height: auto;
+	}	
+
+	.news_right_image_part > img {
+		width: 100%;
+		height: auto;
+	}	
+
+	.border_top_grey {
+		border-width: 0;
+		border-top-width: 3px;
+		border-color: #d7d6d6;
+		border-style: solid;
+	}
+</style>
+{% end %}
+
+{% block content %}
+<div class="test_block">
+	<div class="row">
+		<div class="col-md-4">
+			<div class="news_left_part">
+				<div class="news_left_image_part">
+				<img src="images/1.png" >
+				</div>
+				<h3>News heading <small>Secondary text</small></h3>
+				<p>
+					I am writing this news to you. test test test test test test 
+					<a href="/details"> more details...</a>
+				</p>
+			</div>
+			<div class="news_left_part">
+				<div class="news_left_image_part">
+				<img src="images/1.png" >
+				</div>
+				<h3>News heading <small>Secondary text</small></h3>
+				<p>
+					I am writing this news to you. test test test test test test 
+
+				</p>
+			</div>
+			<div class="news_left_part">
+				<div class="news_left_image_part">
+				<img src="images/1.png" >
+				</div>
+				<h3>News heading <small>Secondary text</small></h3>
+				<p>
+					I am writing this news to you. test test test test test test 
+
+				</p>
+			</div>
+		</div>
+
+		<div class="col-md-8">
+			<div class="news_right_part">
+				<div class="news_right_image_part">
+				<img src="images/1.png" >
+				</div>
+				<h2>Big News heading <small>Secondary text</small></h2>
+				<p>
+					I am writing this news to you. test test test test test test 
+				</p>
+			</div>
+			<div class="news_right_part border_top_grey">
+				<div class="news_right_image_part">
+				<img src="images/1.png" >
+				</div>
+				<h2>Big News heading <small>Secondary text</small></h2>
+				<p>
+					I am writing this news to you. test test test test test test 
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+{% end %}

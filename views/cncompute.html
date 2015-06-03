@@ -1,0 +1,224 @@
+{% extends 'tpl.html' %}
+
+{% block title %}
+Sol-Bright Technology
+{% end %}
+
+{% block n7 %}nl{% end %}
+
+{% block l7 %}
+active
+{% end %}
+
+{% block css %}
+<style>
+tr {
+	text-align: left;
+}
+
+.input_part {
+	border-width: 0;
+	border-right-width: 3px;
+	border-color: #337ab7;
+	border-style: solid;
+}
+
+.compute_button {
+	text-align: right;
+}
+
+#c6 {
+	width: 90%;
+}
+</style>
+{% end %}
+
+{% block content %}
+<div class="test_block">
+	<div class="row">
+		<div class="input_part col-md-6">
+			<form class="form-horizontal">
+				<div class="form-group">
+					<label for="inputEmail3" class="col-sm-8 control-label">Total capacity of solar station (MW)</label>
+					<div class="col-sm-4">
+						<input type="" class="form-control" id="c2" placeholder="">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputEmail3" class="col-sm-8 control-label">Average capacity of each panels (W)</label>
+					<div class="col-sm-4">
+						<input type="" class="form-control" id="c3" placeholder="">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputEmail3" class="col-sm-8 control-label">Length of panel (mm)</label>
+					<div class="col-sm-4">
+						<input type="" class="form-control" id="c4" placeholder="">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputEmail3" class="col-sm-8 control-label">Width of panel (mm)</label>
+					<div class="col-sm-4">
+						<input type="" class="form-control" id="c5" placeholder="">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputEmail3" class="col-sm-8 control-label">Arrangement of Panles</label>
+					<div class="col-sm-4">
+						<select name="c6" id="c6">
+							<option value="v1">Vertically 1 row</option>
+							<option value="v2">Vertically 2 row</option>
+							<option value="v3">Vertically 3 row</option>
+							<option value="v4">Vertically 4 row</option>
+							<option value="h3">Horizontally 3 row</option>
+							<option value="h4">Horizontally 4 row</option>
+							<option value="h5">Horizontally 5 row</option>
+							<option value="h6">Horizontally 6 row</option>
+							<option value="h7">Horizontally 7 row</option>
+						</select>
+						<!--<input type="" class="form-control" id="c6" placeholder="">-->
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputEmail3" class="col-sm-8 control-label">Rows of componets in solar station</label>
+					<div class="col-sm-4">
+						<input type="" class="form-control" id="c7" placeholder="">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputEmail3" class="col-sm-8 control-label">Local electricity price (€)</label>
+					<div class="col-sm-4">
+						<input type="" class="form-control" id="c8" placeholder="">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputEmail3" class="col-sm-8 control-label">Local government subsides (€)</label>
+					<div class="col-sm-4">
+						<input type="" class="form-control" id="c9" placeholder="">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputEmail3" class="col-sm-8 control-label">Designed service life of PV panels (Year)</label>
+					<div class="col-sm-4">
+						<input type="" class="form-control" id="c10" placeholder="">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputEmail3" class="col-sm-8 control-label">Service life already spent of PV panels (Year)</label>
+					<div class="col-sm-4">
+						<input type="" class="form-control" id="c11" placeholder="">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputEmail3" class="col-sm-8 control-label">The anuual cost of cleaning before using robot (€)</label>
+					<div class="col-sm-4">
+						<input type="" class="form-control" id="c12" placeholder="">
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-offset-2 col-sm-10 compute_button">
+						<button type="button" class="compute_submit btn btn-success">Compute</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="col-md-6">
+			<table class="table table-bordered table-hover">
+				<thead>
+					<tr>
+						<th>Item</th>
+						<th>Value</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="active">
+						<td>Anuual power generation (KWh)</td>
+						<td id="e2"></td>
+					</tr>
+					<tr>
+						<td>Amount of panels</td>
+						<td id="e3"></td>
+					</tr>
+					<tr class="success">
+						<td>Width of componet (mm)</td>
+						<td id="e6"></td>
+					</tr>
+					<tr>
+						<td>Average cleaning distance for each robot (meter)</td>
+						<td id="e7"></td>
+					</tr>
+					<tr class="info">
+						<td>Anuual income improvement (€)</td>
+						<td id="e9"></td>
+					</tr>
+					<tr>
+						<td>Remaining service life (Year)</td>
+						<td id="e10"></td>
+					</tr>
+					<!--<tr class="warning">
+						<td>Increased service life by daily cleaning (Year)</td>
+						<td id="e11"></td>
+					</tr>-->
+					<tr>
+						<td>Saved cleaning cost in future</td>
+						<td id="e12"></td>
+					</tr>
+					<tr class="danger">
+						<td>Total maintenance cost in futrue</td>
+						<td id="e14"></td>
+					</tr>
+					<tr>
+						<td>Anuual improvement generation by Sol-Bright project (KWh)</td>
+						<td id="g2"></td>
+					</tr>
+					<tr class="warning">
+						<td>Total surface area of panels (square meter)</td>
+						<td id="g3"></td>
+					</tr>
+					<tr>
+						<td>Project cost (€)</td>
+						<td id="g7"></td>
+					</tr>
+					<tr class="info">
+						<td>Anuual maintenance cost(€)</td>
+						<td id="g8"></td>
+					</tr>
+					<tr>
+						<td>Return on investment period (Month)</td>
+						<td id="g9"></td>
+					</tr>
+					<!--<tr class="success">
+						<td>The actual ervice life after daily cleaning (Year)</td>
+						<td id="g10"></td>
+					</tr>
+					<tr>
+						<td>Income improvement by increased service life (€)</td>
+						<td id="g11"></td>
+					</tr>-->
+					<tr class="active">
+						<td>Income improvement by increased generation rate (€)</td>
+						<td id="g12"></td>
+					</tr>
+					<tr>
+						<td>Total revenue in future</td>
+						<td id="g13"></td>
+					</tr>
+					<tr class="success">
+						<td>Total investment</td>
+						<td id="g14"></td>
+					</tr>
+					<tr>
+						<td>ROI rate</td>
+						<td id="g15"></td>
+					</tr>
+				</tbody>
+
+			</table>
+		</div>
+	</div>
+</div>
+{% end %}
+
+{% block js %}
+<script src="/js/compute.js"></script>
+{% end %}
