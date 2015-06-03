@@ -63,6 +63,8 @@ class CHNComputeHandler(tornado.web.RequestHandler):
 if __name__ == "__main__":
     application = tornado.web.Application([
         (r"/^solbrighttech.com$", MainHandler),
+        (r"/", MainHandler),
+
         (r"/company", CompanyHandler),
         (r"/product", ProductHandler),
         (r"/news", NewsHandler),

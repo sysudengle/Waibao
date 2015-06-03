@@ -1,4 +1,4 @@
-{% extends 'tpl.html' %}
+{% extends 'cntpl.html' %}
 
 {% block title %}
 Sol-Bright Technology
@@ -13,8 +13,7 @@ active
 {% block css %}
 <style>
 	.test_image_part > img {
-		width: 281px;
-		height: auto;
+		width: 100%;
 	}	
 
 	.test_intro_part p {
@@ -22,17 +21,18 @@ active
 		font-size: 18px;
 	}
 
-	#test_image_part2 {
+	.test_image_part2 {
 		text-align: middle;
 		padding-bottom: 30px;
 	}
+
 </style>
 {% end %}
 
 {% block content %}
 <div class="test_block">		
 	<div class="test_image_part">
-		<img src="images/t1.jpg" >
+		<img src="/images/t1.jpg" >
 	</div>
 </div>
 
@@ -49,7 +49,7 @@ Two test have been taken, in order to see the efficiency of the cleaning robot.
 
 	</div>
 	<div class="test_image_part2">
-		<img src="images/t3.jpg" >
+		<img src="/images/t3.jpg" >
 	</div>
 
 	<div class="test_intro_part">
@@ -57,8 +57,8 @@ Two test have been taken, in order to see the efficiency of the cleaning robot.
 		The efficiency of the power generation has been increased by 7-10% after using the Sol-Bright Tech Cleaning Robot.
 		</p>
 	</div>
-	<div id="test_image_part2">
-		<img src="images/t2.jpg">
+	<div class="test_image_part2">
+		<img src="/images/t2.jpg">
 	</div>
 </div>
 
