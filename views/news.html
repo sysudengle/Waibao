@@ -29,63 +29,86 @@ active
 		border-color: #d7d6d6;
 		border-style: solid;
 	}
+
+	.news_modal_image_part > img{
+		width: 100%;
+	}
 </style>
 {% end %}
 
 {% block content %}
 <div class="test_block">
 	<div class="row">
-		<div class="col-md-4">
-			<div class="news_left_part">
-				<div class="news_left_image_part">
-				<img src="images/1.png" >
+		<div class="col-md-8">
+			<div class="news_right_part">
+				<div class="news_right_image_part">
+				<img src="images/n1.jpg" >
 				</div>
-				<h3>News heading <small>Secondary text</small></h3>
+				<h2>Big News heading <small>Secondary text</small></h2>
 				<p>
-					I am writing this news to you. test test test test test test 
-					<a href="/details"> more details...</a>
-				</p>
-			</div>
-			<div class="news_left_part">
-				<div class="news_left_image_part">
-				<img src="images/1.png" >
-				</div>
-				<h3>News heading <small>Secondary text</small></h3>
-				<p>
-					I am writing this news to you. test test test test test test 
-
-				</p>
-			</div>
-			<div class="news_left_part">
-				<div class="news_left_image_part">
-				<img src="images/1.png" >
-				</div>
-				<h3>News heading <small>Secondary text</small></h3>
-				<p>
-					I am writing this news to you. test test test test test test 
-
+				China Ningxia Zhongwei PV power station belongs to GCL Group, located in Tengger Desert, North West China, with230MW of generating capacity. In May, 2015, GCL group power station started the installation of 1000 intelligence cleaning robot. 
 				</p>
 			</div>
 		</div>
 
-		<div class="col-md-8">
-			<div class="news_right_part">
-				<div class="news_right_image_part">
-				<img src="images/1.png" >
+		<div class="col-md-4">
+			<div class="news_left_part">
+				<div class="news_left_image_part">
+					<img src="images/n2.jpg" class="btn" data-toggle="modal" data-target="#n2_detail">
 				</div>
-				<h2>Big News heading <small>Secondary text</small></h2>
+			</div>
+			<div class="news_left_part">
+				<div class="news_left_image_part">
+					<img src="images/n3.jpg" class="btn" data-toggle="modal" data-target="#n3_detail">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="n2_detail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+			</div>
+			<div class="modal-body">
+				<h3>News heading <small>Secondary text</small></h3>
+				<div class="news_modal_image_part">
+					<img src="images/n2.jpg">
+				</div>
 				<p>
-					I am writing this news to you. test test test test test test 
+				China Jiangsu Baoying PV power station is the first water surface PV power station of GCL Group. The project is located in Sheyanghu Town of Baoying City, and was built in the water, with 30MW of generating capacity. In January, 2015, GCL group power station started the installation of 200 intelligence cleaning robots. The power conversion efficiency improves by 10% after cleaning.
 				</p>
 			</div>
-			<div class="news_right_part border_top_grey">
-				<div class="news_right_image_part">
-				<img src="images/1.png" >
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="n3_detail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+			</div>
+			<div class="modal-body">
+				<h3>News heading <small>Secondary text</small></h3>
+				<div class="news_modal_image_part">
+					<img src="images/n3.jpg">
 				</div>
-				<h2>Big News heading <small>Secondary text</small></h2>
 				<p>
-					I am writing this news to you. test test test test test test 
+				During the Shanghai SNEC PV Power Expo, the Sol-Bright Technology cleaning robot has won the SNEC 2015“Top 10 Highlight” Gigawatt Gold Award, since the company has made the contribution in Research and Application of Intelligent Cleaning Robot.
 				</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 			</div>
 		</div>
 	</div>
