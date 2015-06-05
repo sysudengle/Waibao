@@ -1,5 +1,4 @@
 {% extends 'tpl.html' %}
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 {% block title %}
 Sol-Bright Technology
@@ -125,7 +124,7 @@ active
 								<img src="images/1p.png" alt="Chania">
 							</div>
 							<div class="panel-title product_title">
-								<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+								<a class="product_href" data-trigger="1" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 									Increase in efficiency
 								</a>
 							</div>
@@ -137,7 +136,7 @@ active
 								<img src="images/2p.png" alt="Chania">
 							</div>
 							<div class="panel-title product_title">
-								<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								<a class="product_href collapsed" data-trigger="0" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
 									Cost Effective
 								</a>
 							</div>
@@ -149,7 +148,7 @@ active
 								<img src="images/3p.png" alt="Chania">
 							</div>
 							<div class="panel-title product_title">
-								<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								<a class="collapsed product_href" data-trigger="0" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
 									Integrated Technology
 								</a>
 							</div>
@@ -161,7 +160,7 @@ active
 								<img src="images/4p.png" alt="Chania">
 							</div>
 							<div class="panel-title product_title">
-								<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+								<a class="product_href collapsed" data-trigger="0" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
 									Environmentally Adaptive
 								</a>
 							</div>
@@ -240,4 +239,8 @@ active
 		</div>
 	</div>
 
+{% end %}
+
+{% block js %}
+<script src="/js/product.js"></script>
 {% end %}
