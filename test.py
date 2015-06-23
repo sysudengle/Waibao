@@ -31,6 +31,10 @@ class ComputeHandler(tornado.web.RequestHandler):
     def get(self):
         self.render("./views/compute.html")
 
+class ContactHandler(tornado.web.RequestHandler):
+    def get(self):
+        self.render("./views/contact.html")
+
 
 class CHNMainHandler(tornado.web.RequestHandler):
     def get(self):
@@ -71,6 +75,7 @@ if __name__ == "__main__":
         (r"/test", TestHandler),
         (r"/faq", FaqHandler),
         (r"/compute", ComputeHandler),
+        (r"/contact", ContactHandler),
 
 
         (r"/cn", CHNMainHandler),
