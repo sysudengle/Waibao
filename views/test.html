@@ -31,6 +31,30 @@ active
 		height: auto;
 	}
 
+	sup {
+		font-size: 1pt;
+	}
+
+	table > tbody > tr > th {
+		text-align: center;
+	}
+
+	#test_table1 {
+		width: 60%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	#test_table2 {
+		width: 60%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	table tbody>tr>td.vert-align>.vert_middle {
+		vertical-align: middle;
+	}
+	
 </style>
 {% end %}
 
@@ -54,6 +78,33 @@ Two test have been taken, in order to see the efficiency of the cleaning robot.
 
 	</div>
 	<div class="test_image_part2">
+				<div id="test_table1">
+					<table class="table table-bordered">
+						<tr>
+							<th></th>
+							<th>First test</th>
+							<th>Second test</th>
+						</tr>
+
+						<tr>
+							<th style="vertical-align:middle">Test Time</th>
+							<th>
+								<p>12:30 31th Jan.</p>
+								<p>(Panel not cleaned for 3 days)</p>
+							</th>
+							<th>
+								<p>13:00 11th Feb.</p>
+								<p>(Panel not cleaned for 10 days)</p>
+							</th>
+						</tr>
+
+						<tr>
+							<th>Instantaneous radiation value</th>
+							<th>Around 900W/m<sup>2</sup></th>
+							<th>Around 600W/m<sup>2</sup></th>
+						</tr>
+					</table>
+				</div>
 		<img src="images/t2.jpg" >
 	</div>
 
@@ -63,6 +114,43 @@ Two test have been taken, in order to see the efficiency of the cleaning robot.
 		</p>
 	</div>
 	<div class="test_image_part2">
+		<div id="test_table2">
+			<table class="table table-bordered">
+				<tr>
+					<th></th>
+					<th></th>
+					<th>Before cleaning</th>
+					<th>After cleaning</th>
+					<th>Efficiency Upgrade</th>
+				</tr>
+				<tr>
+					<th style="vertical-align:middle" rowspan=2 class="vert_mddile">First Test</th>
+					<th>PMAX</th>
+					<th>214.4</th>
+					<th>236.7</th>
+					<th style="vertical-align:middle" class="vert-middle" rowspan=2>10.40%</th>
+				</tr>
+
+				<tr>
+					<th>IRR</th>
+					<th>906</th>
+					<th>906</th>
+				</tr>
+
+				<tr>
+					<th style="vertical-align:middle" class="vert-middle" rowspan=2>Second Test</th>
+					<th>PMAXX</th>
+					<th>138</th>
+					<th>147.8</th>
+					<th style="vertical-align:middle" class="vert-middle" rowspan=2>7.10%</th>
+				</tr>
+				<tr>
+					<th>IRR</th>
+					<th>614</th>
+					<th>615</th>
+				</tr>
+			</table>
+		</div>
 		<img src="images/t3.jpg">
 	</div>
 </div>
