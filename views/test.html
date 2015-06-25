@@ -54,6 +54,24 @@ active
 	table tbody>tr>td.vert-align>.vert_middle {
 		vertical-align: middle;
 	}
+
+	#test_table1 th {
+		border-color: black;
+	}
+
+	#test_table2 th {
+		border-color: black;
+	}
+
+	.pink {
+		background-color: rgb(251, 212, 179);
+	}
+	.green {
+		background-color: rgb(215, 227, 189);
+	}
+	.blue {
+		background-color: rgb(183, 221, 232);
+	}
 	
 </style>
 {% end %}
@@ -79,7 +97,7 @@ Two test have been taken, in order to see the efficiency of the cleaning robot.
 	</div>
 	<div class="test_image_part2">
 				<div id="test_table1">
-					<table class="table table-bordered">
+					<table class="test_table table table-bordered">
 						<tr>
 							<th></th>
 							<th>First test</th>
@@ -105,7 +123,7 @@ Two test have been taken, in order to see the efficiency of the cleaning robot.
 						</tr>
 					</table>
 				</div>
-		<img src="images/t2.jpg" >
+				<!--<img src="images/t2.jpg" >-->
 	</div>
 
 	<div class="test_intro_part">
@@ -115,7 +133,7 @@ Two test have been taken, in order to see the efficiency of the cleaning robot.
 	</div>
 	<div class="test_image_part2">
 		<div id="test_table2">
-			<table class="table table-bordered">
+			<table class="test_table table table-bordered">
 				<tr>
 					<th></th>
 					<th></th>
@@ -125,10 +143,10 @@ Two test have been taken, in order to see the efficiency of the cleaning robot.
 				</tr>
 				<tr>
 					<th style="vertical-align:middle" rowspan=2 class="vert_mddile">First Test</th>
-					<th>PMAX</th>
-					<th>214.4</th>
-					<th>236.7</th>
-					<th style="vertical-align:middle" class="vert-middle" rowspan=2>10.40%</th>
+					<th class="green">PMAX</th>
+					<th class="green">214.4</th>
+					<th class="green">236.7</th>
+					<th style="vertical-align:middle" class="pink vert-middle" rowspan=2>10.40%</th>
 				</tr>
 
 				<tr>
@@ -139,10 +157,10 @@ Two test have been taken, in order to see the efficiency of the cleaning robot.
 
 				<tr>
 					<th style="vertical-align:middle" class="vert-middle" rowspan=2>Second Test</th>
-					<th>PMAXX</th>
-					<th>138</th>
-					<th>147.8</th>
-					<th style="vertical-align:middle" class="vert-middle" rowspan=2>7.10%</th>
+					<th class="green">PMAXX</th>
+					<th class="green">138</th>
+					<th class="green">147.8</th>
+					<th style="vertical-align:middle" class="blue vert-middle" rowspan=2>7.10%</th>
 				</tr>
 				<tr>
 					<th>IRR</th>
@@ -151,7 +169,7 @@ Two test have been taken, in order to see the efficiency of the cleaning robot.
 				</tr>
 			</table>
 		</div>
-		<img src="images/t3.jpg">
+		<!--<img src="images/t3.jpg">-->
 	</div>
 </div>
 

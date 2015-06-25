@@ -103,6 +103,32 @@ table td {
 	vertical-align: middle;
 }
 
+.t1 {
+	background-color: rgb(184, 204, 228);
+}
+.t2 {
+	background-color: rgb(229, 183, 183);
+}
+.t3 {
+	background-color: rgb(215, 227, 189);
+}
+.t4 {
+	background-color: rgb(204, 192, 216);
+}
+.t5 {
+	background-color: rgb(183, 221, 232);
+}
+.t6 {
+	background-color: rgb(251, 212, 179);
+}
+.tl {
+	background-color: rgb(255, 255, 150);
+}
+
+#p_table th,
+#p_table td {
+	border-color: black;
+}
 </style>
 {% end %}
 
@@ -250,14 +276,14 @@ table td {
 			</ul>-->
 			<div class="p3_image_part">
 				<div id="product_table">
-					<table class="table table-bordered">
+					<table id="p_table" class="table table-bordered">
 						<tr>
-							<th>Methods</th>
-							<th>Manual Cost</th>
-							<th>Water</th>
-							<th>Equipment Cost</th>
-							<th>Environment Requirement</th>
-							<th>Cleaning Efficiency</th>
+							<th class="t1">Methods</th>
+							<th class="t2">Manual Cost</th>
+							<th class="t3">Water</th>
+							<th class="t4">Equipment Cost</th>
+							<th class="t5">Environment Requirement</th>
+							<th class="t6">Cleaning Efficiency</th>
 						</tr>
 
 						<tr>
@@ -296,7 +322,7 @@ table td {
 							<td>Good</td>
 						</tr>
 
-						<tr>
+						<tr class="tl">
 							<th>Sol-Bright Tech</th>
 							<td>None</td>
 							<td>None</td>
@@ -306,7 +332,7 @@ table td {
 						</tr>
 					</table>
 				</div>
-				<img src="/images/p3.jpg">
+				<!--<img src="/images/p3.jpg">-->
 			</div>
 		</div>
 	</div>
