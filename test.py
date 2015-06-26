@@ -64,6 +64,10 @@ class CHNComputeHandler(tornado.web.RequestHandler):
     def get(self):
         self.render("./views/cncompute.html")
 
+class CHNContactHandler(tornado.web.RequestHandler):
+    def get(self):
+        self.render("./views/cncontact.html")
+
 if __name__ == "__main__":
     application = tornado.web.Application([
         (r"/^solbrighttech.com$", MainHandler),
@@ -85,6 +89,7 @@ if __name__ == "__main__":
         (r"/cn/test", CHNTestHandler),
         (r"/cn/faq", CHNFaqHandler),
         (r"/cn/compute", CHNComputeHandler),
+        (r"/cn/contact", CHNContactHandler),
 
         (r"/images/(.*)", tornado.web.StaticFileHandler, {"path": "./images"},),
         (r"/css/(.*)", tornado.web.StaticFileHandler, {"path": "./css"},),

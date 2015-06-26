@@ -1,7 +1,7 @@
 {% extends 'cntpl.html' %}
 
 {% block title %}
-	Home
+Sol-Bright Technology
 {% end %}
 
 {% block n5 %}nl{% end %}
@@ -29,63 +29,89 @@ active
 		border-color: #d7d6d6;
 		border-style: solid;
 	}
+
+	.news_modal_image_part > img{
+		width: 100%;
+	}
+	h2 {
+		font-size: 27px;
+	}
 </style>
 {% end %}
 
 {% block content %}
 <div class="test_block">
 	<div class="row">
-		<div class="col-md-4">
-			<div class="news_left_part">
-				<div class="news_left_image_part">
-				<img src="/images/1.png" >
+		<div class="col-md-6">
+			<div class="news_right_part">
+				<div class="news_right_image_part">
+				<img src="/images/n1.jpg" >
 				</div>
-				<h3>News heading <small>Secondary text</small></h3>
+				<h2>与中卫太阳能电站合作 </h2>
 				<p>
-					I am writing this news to you. test test test test test test 
-					<a href="/details"> more details...</a>
-				</p>
-			</div>
-			<div class="news_left_part">
-				<div class="news_left_image_part">
-				<img src="/images/1.png" >
-				</div>
-				<h3>News heading <small>Secondary text</small></h3>
-				<p>
-					I am writing this news to you. test test test test test test 
-
-				</p>
-			</div>
-			<div class="news_left_part">
-				<div class="news_left_image_part">
-				<img src="/images/1.png" >
-				</div>
-				<h3>News heading <small>Secondary text</small></h3>
-				<p>
-					I am writing this news to you. test test test test test test 
-
+				中国宁夏中卫光伏电站属于协鑫集团麾下的光伏电站，地处中国西北部的腾格里沙漠，项目发容量为230兆瓦。2015年五月，协鑫集团中卫电站开始第一批1000台智能机器人的安装。
 				</p>
 			</div>
 		</div>
 
-		<div class="col-md-8">
-			<div class="news_right_part">
-				<div class="news_right_image_part">
-				<img src="/images/1.png" >
+		<div class="col-md-6">
+			<div class="news_left_part">
+				<div class="news_left_image_part">
+					<img src="/images/n2.jpg" class="btn" data-toggle="modal" data-target="#n2_detail">
 				</div>
-				<h2>Big News heading <small>Secondary text</small></h2>
+			</div>
+			<div class="news_left_part">
+				<div class="news_left_image_part">
+					<img src="/images/n3.jpg" class="btn" data-toggle="modal" data-target="#n3_detail">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="n2_detail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">与江苏宝应电站的合作</h4>
+			</div>
+			<div class="modal-body">
+				<!--<h3>cooperation with BAOYING SOLAR POWER STATION</h3>-->
+				<div class="news_modal_image_part">
+					<img src="/images/n2.jpg">
+				</div>
 				<p>
-					I am writing this news to you. test test test test test test 
+				中国江苏宝应光伏电站是协鑫集团麾下的第一个水面光伏电站。该项目位于宝应市射阳湖镇，项目建于养殖鱼塘水域内，占地面积为930亩，项目发电容量30兆瓦。2015年一月，协鑫集团电站安装200台智能清洁机器人。智能清洁机器人清洁后发电转换率对比清洁之前提高了7%-10%。
 				</p>
 			</div>
-			<div class="news_right_part border_top_grey">
-				<div class="news_right_image_part">
-				<img src="/images/1.png" >
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="n3_detail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">在2015年上海SNEC光伏展取得巨大成功</h4>
+			</div>
+			<div class="modal-body">
+				<!--<h3>WINNING IN SNEC 2015</h3>-->
+				<div class="news_modal_image_part">
+					<img src="/images/n3.jpg">
 				</div>
-				<h2>Big News heading <small>Secondary text</small></h2>
 				<p>
-					I am writing this news to you. test test test test test test 
+				15年2上海SNEC光伏发电博览会期间，我们公司的光伏智能清洁机器人荣获了2015年SNEC“十大亮点”吉瓦金奖，以肯定公司成立以来在智能保洁机器人研究发明中做出的贡献。
 				</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
 			</div>
 		</div>
 	</div>

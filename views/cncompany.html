@@ -12,6 +12,26 @@ active
 
 {% block css %}
 <style>
+ #container {
+      overflow: hidden;
+      width: 100%;
+    }
+    #left-col {
+      float: left;
+      width: 50%;
+      background-color: orange;
+      padding-bottom: 500em;
+      margin-bottom: -500em;
+    }
+    #right-col {
+      float: left;
+      width: 50%;
+      margin-right: -1px; /* Thank you IE */
+      border-left: 1px solid black;
+      background-color: red;
+      padding-bottom: 500em;
+      margin-bottom: -500em;
+    }
 
 .com2_right > p,
 .com1_left2 > p,
@@ -25,7 +45,7 @@ active
 	width: 100%;
 }
 
-.company2 p:first-letter, 
+/*.company2 p:first-letter, 
 .company1 p:first-letter {
 	margin-top: 6px;
 	line-height: 0.8;
@@ -33,7 +53,7 @@ active
 	float: left;
 	font-weight: 800;
 	padding-right: 5px;
-}
+}*/
 
 .company2 p,
 .company1 p {
@@ -92,6 +112,9 @@ h3 {
 
 .container2 {
 	overflow: hidden;
+	width: 100%;
+	/*background-color: #F4EEEE;*/
+	background-color: white;
 }
 
 .col1 {
@@ -105,9 +128,120 @@ h3 {
 	padding-bottom:2000px;
     margin-bottom:-2000px;
 	width: 42%;
-	height: 100%;
 	float: left;
 }
+
+
+#future {
+	background-color: rgb(235, 127, 29);
+}
+
+#nov {
+	background-color: rgb(162, 29, 34);
+}
+
+#oct {
+	background-color: rgb(153, 116, 72);
+}
+
+#july {
+	background-color: rgb(237, 212, 32);
+}
+
+#may {
+	background-color: rgb(236, 126, 29);
+}
+
+#sep {
+	background-color: rgb(15, 64, 122);
+}
+
+#june {
+	background-color: rgb(31, 142, 66);
+}
+
+.t_top_padding {
+	width: 100%;
+	height: 1.6%;
+}
+
+.t_time_part {
+	width: 100%;
+	height: 14.2%;	
+	float: left;
+}
+
+.time_tag {
+	height: 23px;
+	color: white;
+	font-weight: 900;
+	font-size: 17px;
+	padding-right: 5px;
+}
+
+.time_tag_font {
+	text-align: left;
+}
+
+.text_left {
+	text-align: left;
+	padding-left: 10px;
+}
+
+.text_right {
+	text-align: right;
+	padding-right: 10px;
+}
+
+.time_flow_left {
+	height: 100%;
+}
+
+.row1 {
+	height: 741px;
+	display: table;
+}
+
+.cw1 {
+	width: 5%;
+	display: table-cell;
+}
+
+.cw2 {
+	width: 40%;
+	display: table-cell;
+}
+
+.cw3 {
+	width: 10%;
+	display: table-cell;
+}
+
+.dotted_border {
+	border-width: 0;
+	border-left: 2px;
+	border-style: dotted;
+	height: 100%;
+}
+
+.time_tag_year {
+	background-color: white;
+	height: 23px;
+	font-weight: 900;
+	font-size: 17px;
+}
+
+.year_table {
+	height: 100%;
+	width: 100%;
+	display: table;
+}
+
+.year_cell {
+	width: 50%;
+	display: table-cell;
+}
+
 
 </style>
 {% end %}
@@ -190,23 +324,23 @@ h3 {
 			</div>
 			<div class="com1_left2">
 				<p id="p4">
-				Sol-Bright Technology provides the turnkey solution to utility scale solar power plants. Our team provides customized manufacturing, assembling and provides on site installation with professional after-sales maintenance services to our customers.
+				我们是世界领先的实用智能光伏板清洁机器人的专业制造商
 				</p>
 				<p id="p5">
-				We abide by the values of integrity, technology oriented, and continuous innovation to provide the best solution to our clients. We have committed ourselves to the mission of developing green energy resources to build a greener world for tomorrow. 
+				我们遵循正直、科技原创以及不断革新的价值观，从而为客户提供最优的解决方案。发展清洁能源，创造环保世界是我们不变的使命。
 				</p>
 			</div>
 		</div>
 		<div class="col-md-6">
 			<div class="com1_right">
 				<p id="p2">
-				We are one of the world´s leading professional manufacturers that builds the most practical and intelligent robot to clean photovoltaic modules.
+				思拓光伏科技为大型地面电站提供总控式的清洁解决方案，我们的团队为客户提供定制化生产、组装，现场技术支持以及专业的售后维护服务。
 				</p>
 				<p id="p3">
-				We focus on value-adding and customized services in the solar industry. Our company focuses on R&D and services to continuously bring the best technological solutions to our valued customers. 
+				我们专注于光伏产业的附加价值和订制服务，我公司聚焦科学研发，从而能为我们的客户持续提供最优的技术解决方案。
 				</p>
 				<p id="p1">
-				After many researches, trial and errors, Sol-Bright Technology successfully developed their first generation of intelligent cleaning robot in 2013. The advanced technology behind the innovation has obtained patents both domestically and internationally. It is also highly acknowledged by many industry experts and has been recognized at SNEC expo in 2015.  
+				经过无数的研究，实验和失败，思拓光伏科技在终于成功研发出了第一代智能清洁机器人，其革命性的先进技术在国内外均获得诸多专利。在2015年上海SNEC光伏展会上，同样得到了众多业内专家的好评及一致认可。
 				</p>
 			</div>
 			<div class="com1_right2">
@@ -229,18 +363,180 @@ h3 {
 	</div>-->
 </div>
 <div class="test_block">
-	<h3>Our Footprint</h3>
+	<h3>我们的足迹</h3>
 
 	<div class="container2">
 			<div class="col1 com3_left">
-				<img src="/images/co0.jpg" >
+				<!--<img src="images/co0.jpg" >-->
+				<div class="row1">
+					<div class="cw1">
+					</div>
+					<div class="cw2 time_flow_left">
+						<div class="t_top_padding">
+						</div>
+						<div class="t_time_part">
+						</div>
+						<div class="t_time_part">
+							<div id="nov" class="text_right time_tag">
+								11月
+							</div>
+							<p class="time_tag_font">
+							思拓光伏科技成功中标GCL集团江苏宝应电站光伏板清洁工程
+							</p>
+						</div>
+						<div class="t_time_part">
+						</div>
+						<div class="t_time_part">
+							<div id="july" class="text_right time_tag">
+								7月
+							</div>
+							<p class="time_tag_font">
+							思拓光伏科技开发的智能清洁机器人成功通过在GCL集团徐州电站的第一次试运行实验
+							</p>
+						</div>
+						<div class="t_time_part">
+						</div>
+						<div class="t_time_part">
+							<div id="sep" class="text_right time_tag">
+								9月
+							</div>
+							<p class="time_tag_font">
+								思拓光伏科技正式开始研发智能清洁机器人，无数实验和错误开始了…
+							</p>
+						</div>
+						<div class="t_time_part">
+						</div>
+					</div>
+					<div class="cw3">
+						<div class="t_top_padding">
+						</div>
+						<div class="t_time_part">
+							<div class="time_tag_year">
+								未来
+							</div>
+							<div class="year_table">
+								<div class="year_cell"></div>
+								<div class="year_cell dotted_border"></div>
+							</div>
+							<!--<div class="row">
+								<div class="col-md-6">
+								</div>
+								<div class="col-md-6 dotted_border">
+								</div>
+							</div>-->
+						</div>
+
+						<div class="t_time_part">
+							<div class="time_tag_year">
+								2014:
+							</div>
+							<div class="year_table">
+								<div class="year_cell"></div>
+								<div class="year_cell dotted_border"></div>
+							</div>
+						</div>
+
+						<div class="t_time_part">
+							<div class="time_tag_year">
+								.2014
+							</div>
+							<div class="year_table">
+								<div class="year_cell"></div>
+								<div class="year_cell dotted_border"></div>
+							</div>
+						</div>
+
+						<div class="t_time_part">
+							<div class="time_tag_year">
+								2014:
+							</div>
+							<div class="year_table">
+								<div class="year_cell"></div>
+								<div class="year_cell dotted_border"></div>
+							</div>
+						</div>
+
+						<div class="t_time_part">
+							<div class="time_tag_year">
+								.2014
+							</div>
+							<div class="year_table">
+								<div class="year_cell"></div>
+								<div class="year_cell dotted_border"></div>
+							</div>
+						</div>
+
+						<div class="t_time_part">
+							<div class="time_tag_year">
+								.2013:
+							</div>
+							<div class="year_table">
+								<div class="year_cell"></div>
+								<div class="year_cell dotted_border"></div>
+							</div>
+						</div>
+
+						<div class="t_time_part">
+							<div class="time_tag_year">
+								.2013
+							</div>
+							<div class="year_table">
+								<div class="year_cell"></div>
+								<div class="year_cell dotted_border"></div>
+							</div>
+						</div>
+					</div>
+					<div class="cw2">
+						<div class="t_top_padding">
+						</div>
+						<div class="t_time_part">
+							<div id="future" class="text_left time_tag">
+								合作：
+							</div>
+							<p class="time_tag_font">
+							希望我们在光明的道路上不断前行
+							</p>
+						</div>
+						<div class="t_time_part">
+						</div>
+						<div class="t_time_part">
+							<div id="oct" class="text_left time_tag">
+							10月
+							</div>
+							<p class="time_tag_font">
+							小规模的智能机器人试运行测试，在GCL集团中卫电站取得圆满成功
+							</p>
+						</div>
+						<div class="t_time_part">
+						</div>
+						<div class="t_time_part">
+							<div id="may" class="text_left time_tag">
+							5月
+							</div>
+							<p class="time_tag_font">
+							突破性的技术革新成功的申请到专利（201420260160.5）
+							</p>
+						</div>
+						<div class="t_time_part">
+						</div>
+						<div class="t_time_part">
+							<div id="june" class="text_left time_tag">
+							6月
+							</div>
+							<p class="time_tag_font">
+							思拓光伏科技创始人考察了许多国内光伏电站，对项目可行性做出研究。
+							</p>
+						</div>
+					</div>
+					<div class="cw1">
+					</div>
+				</div>
 			</div>
 			<div class="col2 com3_right">
 				<img id="cp1" src="/images/co4.jpg" >
 				<img id="cp2" src="/images/co5.jpg" >
 				<img id="cp3" src="/images/co6.jpg" >
 			</div>
-			<div class="clearer"></div>
 	</div>
 </div>
 <!--<div class="test_block">

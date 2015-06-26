@@ -1,5 +1,4 @@
 {% extends 'cntpl.html' %}
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 {% block title %}
 Sol-Bright Technology
@@ -60,15 +59,15 @@ active
 	font-size: 15pt;
 }
 
-.p_text_part p:first-letter {
+/*.p_text_part p:first-letter {
 	margin-top: 6px;
 	line-height: 0.8;
 	font-size: 2em;	
-	/*color: rgb(163, 88, 48);*/
+	color: rgb(163, 88, 48);
 	float: left;
 	font-weight: 800;
 	padding-right: 5px;
-}
+}*/
 
 .p_text_part > p {
 	padding-left: 5px;
@@ -92,13 +91,54 @@ active
 	width: 98%;
 	height: auto;
 }
+
+.p1_block p {
+	text-align: left;
+	font-size: 19px;
+}
+
+table th, 
+table td {
+	text-align: center;
+	vertical-align: middle;
+}
+
+.t1 {
+	background-color: rgb(184, 204, 228);
+}
+.t2 {
+	background-color: rgb(229, 183, 183);
+}
+.t3 {
+	background-color: rgb(215, 227, 189);
+}
+.t4 {
+	background-color: rgb(204, 192, 216);
+}
+.t5 {
+	background-color: rgb(183, 221, 232);
+}
+.t6 {
+	background-color: rgb(251, 212, 179);
+}
+.tl {
+	background-color: rgb(255, 255, 150);
+}
+
+#p_table th,
+#p_table td {
+	border-color: black;
+}
 </style>
 {% end %}
 
 {% block content %}
 
 	<div class="test_block p1_block">		
-		<div class="row">
+		<p>
+		近年来，随着光伏产业的迅猛发展，世界各地大规模的光伏电站不断建设。然而，随着光伏板的大规模使用，尘埃污染严重制约了发电效率，已经成为困扰光伏电站所有者和运营者的突出问题。Sol-Bright tech 意识到了问题的重要性并将此视为改革和发展的机遇。
+		</p>
+		<!--<div class="row">
 			<div class="col-md-4 p_text_part">
 				<p>
 				In recent years, with the rapid development of the photovoltaic industry, large-scale solar power plants are being built at a rapid speed around the world. However, with large scales of solar panels, soiling has caused a significant decrease in efficiency in power generation and has become a prominent issue to operators and owners of large-scale solar power plants. Sol-Bright Technology grasped the significance of this problem and regarded it as an opportunity for innovation and growth. 
@@ -112,7 +152,7 @@ active
 					<img src="/images/p2.png">
 				</div>
 			</div>
-		</div>
+		</div>-->
 	</div>
 
 	<div class="test_block">		
@@ -122,11 +162,11 @@ active
 					<div class="orange panel">
 						<div class="orange panel-heading product_title_block" role="tab" id="headingOne">
 							<div class="project_title_image_block">
-								<img src="images/1p.png" alt="Chania">
+								<img src="/images/1p.png" alt="Chania">
 							</div>
 							<div class="panel-title product_title">
-								<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-									Increase in efficiency
+								<a class="product_href" data-trigger="1" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+								显而易见的效率提升
 								</a>
 							</div>
 						</div>
@@ -134,11 +174,11 @@ active
 					<div class="panel yellow">
 						<div class="panel-heading product_title_block" role="tab" id="headingTwo">
 							<div class="project_title_image_block">
-								<img src="images/2p.png" alt="Chania">
+								<img src="/images/2p.png" alt="Chania">
 							</div>
 							<div class="panel-title product_title">
-								<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-									Cost Effective
+								<a class="product_href collapsed" data-trigger="0" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								令人惊叹的成本效应
 								</a>
 							</div>
 						</div>
@@ -146,11 +186,11 @@ active
 					<div class="panel green">
 						<div class="panel-heading product_title_block" role="tab" id="headingThree">
 							<div class="project_title_image_block">
-								<img src="images/3p.png" alt="Chania">
+								<img src="/images/3p.png" alt="Chania">
 							</div>
 							<div class="panel-title product_title">
-								<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-									Integrated Technology
+								<a class="collapsed product_href" data-trigger="0" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								精益求精的技术集成
 								</a>
 							</div>
 						</div>
@@ -158,11 +198,11 @@ active
 					<div class="panel blue">
 						<div class="panel-heading product_title_block" role="tab" id="headingFour">
 							<div class="project_title_image_block">
-								<img src="images/4p.png" alt="Chania">
+								<img src="/images/4p.png" alt="Chania">
 							</div>
 							<div class="panel-title product_title">
-								<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-									Environmentally Adaptive
+								<a class="product_href collapsed" data-trigger="0" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+								全面有效的环境适应性
 								</a>
 							</div>
 						</div>
@@ -175,9 +215,9 @@ active
 						<div id="collapseOne" class="collapse in" role="tabpanel" aria-labelledby="headingOne">
 							<div class="panel-body product_content">
 								<ul>
-									<li class="text-left">Removes 99% of soiling pollution on photovoltaic panels.</li>
-									<li class="text-left">10-20 meters per minutes, which is 1800-3600 square meters per hour on a 3 meters’ wide component.</li>
-									<li class="text-left">Tested in large solar power stations, our robots improve 7-15% of their electricity generation rate.</li>
+									<li class="text-left">对太阳能电池板表面的尘土污染的清洁效率高达99%</li>
+									<li class="text-left">平均行进速度为15-20米每分钟，对于宽度为3米的组件，每小时的清洁面积高达2700-3600平方米</li>
+									<li class="text-left">经过在国内多家大型电站的实际使用和监测，我们的清洁机器人能提高电厂约7-15%的发电效率</li>
 								</ul>
 							</div>
 						</div>
@@ -187,10 +227,10 @@ active
 						<div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
 							<div class="panel-body product_content">
 								<ul>
-									<li class="text-left">Add tracks only in between components for robots transfer freely, fewer robots for more panels.</li>
-									<li class="text-left">Full automatically operation to achieve zero manual cost.</li>
-									<li class="text-left">No added supplemental costs such as water, electricity, etc.</li>
-									<li class="text-left">Customers can gain back their investment within 6-18 months. Income continuously improves year after year.</li>
+									<li class="text-left">只需在组件连接处加装简单的连接件，即可使Sol-Bright的清洁机器人清扫更长的太阳能面板，节约投入</li>
+									<li class="text-left">全自动化的操作，为您大大的节约了人力成本</li>
+									<li class="text-left">完全无需额外的水费、电费等诸多支出</li>
+									<li class="text-left">通过我们实际的核算，我们的电厂客户可以在6-18个月的时间内收回其投入之成本，进而在更长的电厂运营周期内享受净收益</li>
 								</ul>
 							</div>
 						</div>
@@ -199,9 +239,9 @@ active
 						<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
 							<div class="panel-body product_content">
 								<ul>
-									<li class="text-left">All robots can be controlled and monitored by a master application on a computer or mobile device.</li>
-									<li class="text-left">Self-alarm system and can show on the CCS computer when robots are not functioning well, needed no routing manual check.</li>
-									<li class="text-left">Can scheduled robot to run automatically during the night to avoid shadowing.</li>
+									<li class="text-left">通过中控电脑或移动设备端的应用程序，我们可以实现对于机器人操作和监控的在线管理</li>
+									<li class="text-left">机器人上自带的自我检测系统，能及时将无法正常工作的信息传达到中控电脑上，从而无需例行的人工检查</li>
+									<li class="text-left">可编程的控制单元，可以使清洁机器人在夜间工作，从而避免阴影效应，保证电厂发电效率</li>
 								</ul>
 							</div>
 						</div>
@@ -210,10 +250,9 @@ active
 						<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
 							<div class="panel-body product_content">
 								<ul>
-									<li class="text-left">Cleaning without using any water, self-powered using no wires, more economic and easier.</li>
-									<li class="text-left">Functions properly between temperature from -40℃ to 70℃.</li>
-									<li class="text-left">Designed to use over 10 years and we provide 18 months warranty.</li>
-									<li class="text-left">Optional: Snow shovel and laser scan system to detect defected panels can be equipped. </li>
+									<li class="text-left">无水清洁、无需外接电源的自供电系统，更环保也更易于使用</li>
+									<li class="text-left">工作温度范围了-40到70摄氏度，适用环境广</li>
+									<li class="text-left">设计使用寿命为10年，同时提供达18个月的质保期</li>
 								</ul>
 							</div>
 						</div>
@@ -226,7 +265,7 @@ active
 
 	<div class="test_block">		
 		<div class="text_block">
-			<h3 class="text-left"><small> Info </small> Method Comparison </h3>
+			<h3 class="text-left"><small></small> 清洁方法的比较 </h3>
 			<!--<ul class="text-left">
 				<li>18 months warranty, lifelong repair;</li>
 				<li>Free technical consultation;</li>
@@ -235,9 +274,70 @@ active
 				<li>Troubleshoot within shortest time.</li>
 			</ul>-->
 			<div class="p3_image_part">
-				<img src="/images/p3.jpg">
+				<div id="product_table">
+					<table id="p_table" class="table table-bordered">
+						<tr>
+							<th class="t1">清洁方法</th>
+							<th class="t2">人工花费</th>
+							<th class="t3">水花费</th>
+							<th class="t4">器具花费</th>
+							<th class="t5">环境需求</th>
+							<th class="t6">清洁效率</th>
+						</tr>
+
+						<tr>
+							<th>人工清洁</th>
+							<td>非常高</td>
+							<td>低</td>
+							<td>低</td>
+							<td>低</td>
+							<td>非常低</td>
+						</tr>
+
+						<tr>
+							<th>高压冲水</th>
+							<td>高</td>
+							<td>非常高</td>
+							<td>高</td>
+							<td>高</td>
+							<td>好</td>
+						</tr>
+
+						<tr>
+							<th>喷淋</th>
+							<td>低</td>
+							<td>非常高</td>
+							<td>高</td>
+							<td>高</td>
+							<td>一般</td>
+						</tr>
+
+						<tr>
+							<th>专业设备</th>
+							<td>高</td>
+							<td>低</td>
+							<td>非常高</td>
+							<td>非常高</td>
+							<td>好</td>
+						</tr>
+
+						<tr class="tl">
+							<th>Sol-Bright Tech</th>
+							<td>无</td>
+							<td>无</td>
+							<td>中</td>
+							<td>低</td>
+							<td>高</td>
+						</tr>
+					</table>
+				</div>
+				<!--<img src="/images/p3.jpg">-->
 			</div>
 		</div>
 	</div>
 
+{% end %}
+
+{% block js %}
+<script src="/js/product.js"></script>
 {% end %}

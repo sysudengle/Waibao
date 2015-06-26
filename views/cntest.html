@@ -27,8 +27,50 @@ active
 	}
 
 	.test_image_part2 > img {
-		width: 75%;
+		width: 60%;
 		height: auto;
+	}
+
+	sup {
+		font-size: 1pt;
+	}
+
+	table > tbody > tr > th {
+		text-align: center;
+	}
+
+	#test_table1 {
+		width: 60%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	#test_table2 {
+		width: 60%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	table tbody>tr>td.vert-align>.vert_middle {
+		vertical-align: middle;
+	}
+
+	#test_table1 th {
+		border-color: black;
+	}
+
+	#test_table2 th {
+		border-color: black;
+	}
+
+	.pink {
+		background-color: rgb(251, 212, 179);
+	}
+	.green {
+		background-color: rgb(215, 227, 189);
+	}
+	.blue {
+		background-color: rgb(183, 221, 232);
 	}
 	
 </style>
@@ -46,24 +88,85 @@ active
 	</div>
 	<div class="test_intro_part">
 		<p>
-		China Jiangsu PV power station is the first water surface PV power station of GCT Group. Photovoltaic modules are distributed above the water and aquaculture is performed underwater, with 30MW of generating capacity
-The water surface PV power station is located in wet environment, so that the dust is easily attached on the surface of photovoltaic modules, and dust and dirt seriously affect the power conversion efficiency, resulting in over 7% of decrease in the efficiency.
-To effectively remove the dirt on the surface of the PV modules, intelligent cleaning robot is used for regular cleaning, which can thoroughly remove dust and dirt on the surface of modules, in order to improve power generation efficiency.
-Two test have been taken, in order to see the efficiency of the cleaning robot. 
+		协鑫集团宝应电站，是协鑫集团麾下的第一家水面光伏电站。光伏组件分布于水上，水下进行水产养殖，是国内渔光互补项目经典代表之一。该项目位于宝应县射阳湖镇，建于养殖鱼塘水域内，占地面积为930亩，项目发电容量30兆瓦。水面光伏电站位于湿环境中，灰尘容易附着光伏组件的表面上，污物严重影响了功率转换效率，经过测量降低了超过7％的转换率。为了能有效地除去PV模块的表面上的污垢，协鑫集团使用我公司的智能清洗机器人用于定期清洗。我们的智能机器人可以彻底去除模块表面上的灰尘和污垢，从而提高发了发电效率。下面的表格是协鑫集团做的两个测试，展现了我们的智能清洁机器人卓越的清洁效率。
 		</p>
 
 	</div>
 	<div class="test_image_part2">
-		<img src="/images/t3.jpg" >
+				<div id="test_table1">
+					<table class="test_table table table-bordered">
+						<tr>
+							<th></th>
+							<th>第一次测试</th>
+							<th>第二次测试</th>
+						</tr>
+
+						<tr>
+							<th style="vertical-align:middle">测试时间</th>
+							<th>
+								<p>1月31日12:30</p>
+								<p>(测试组件3天未清洁)</p>
+							</th>
+							<th>
+								<p>2月11日13:00</p>
+								<p>(测试组件10天未清洁)</p>
+							</th>
+						</tr>
+
+						<tr>
+							<th>瞬时辐射值</th>
+							<th>900W/㎡左右</th>
+							<th>600W/㎡左右</th>
+						</tr>
+					</table>
+				</div>
+				<!--<img src="images/t2.jpg" >-->
 	</div>
 
 	<div class="test_intro_part">
 		<p>
-		The efficiency of the power generation has been increased by 7-10% after using the Sol-Bright Tech Cleaning Robot.
+		在使用我们公司的智能清洁机器人之后，发电转换率对比清洁之前提高了7%-10%。
 		</p>
 	</div>
 	<div class="test_image_part2">
-		<img src="/images/t2.jpg">
+		<div id="test_table2">
+			<table class="test_table table table-bordered">
+				<tr>
+					<th></th>
+					<th></th>
+					<th>清洁前</th>
+					<th>清洁后</th>
+					<th>效率提升</th>
+				</tr>
+				<tr>
+					<th style="vertical-align:middle" rowspan=2 class="vert_mddile">第一次测试 </th>
+					<th class="green">最大功率</th>
+					<th class="green">214.4</th>
+					<th class="green">236.7</th>
+					<th style="vertical-align:middle" class="pink vert-middle" rowspan=2>10.40%</th>
+				</tr>
+
+				<tr>
+					<th>辐射度</th>
+					<th>906</th>
+					<th>906</th>
+				</tr>
+
+				<tr>
+					<th style="vertical-align:middle" class="vert-middle" rowspan=2>第二次测试</th>
+					<th class="green">最大功率</th>
+					<th class="green">138</th>
+					<th class="green">147.8</th>
+					<th style="vertical-align:middle" class="blue vert-middle" rowspan=2>7.10%</th>
+				</tr>
+				<tr>
+					<th>IRR(辐射度）</th>
+					<th>614</th>
+					<th>615</th>
+				</tr>
+			</table>
+		</div>
+		<!--<img src="images/t3.jpg">-->
 	</div>
 </div>
 

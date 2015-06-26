@@ -1,3 +1,4 @@
+
 {% extends 'cntpl.html' %}
 
 {% block title %}
@@ -17,13 +18,13 @@ active
 			<div class="panel-heading text-left" role="tab" id="headingOne">
 				<h4 class="panel-title">
 					<a class="text-left" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-						1. Does the Sol-Bright Tech Robot detect, or sense, special environmental conditions, that will stop the cleaning operation? For example, can it be programmed to do periodic cleaning during night hours, to avoid shadowing? Or can it work when snowing?
+					1. 我们的智能机器人是否能够在恶劣环境下正常工作，比如在寒冷天气环境下或者沙漠气候环境下？
 					</a>
 				</h4>
 			</div>
 			<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
 				<div class="panel-body text-left">
-					The Sol-Bright Tech has a fully up-gradable, on-board, electronic communication and sensing system (CSS). After improved the built-in battery, robot can operate in the temperature of up to 70℃ and down to -40℃. As part of this improvement package, temperature sensor system will ensure that robot works under allowed temperature to avoid breakdown, in addition, the temperature sensor will detect abnormal temperatures in the panel, while it is being cleaned. This will allow accurate pinpointing of faulty panels for easy change-over.
+				我们的智能光伏清洁机器人可以在70℃和-40℃之间的温度下进行正常工作。
 				</div>
 			</div>
 		</div>
@@ -31,13 +32,13 @@ active
 			<div class="panel-heading text-left" role="tab" id="headingTwo">
 				<h4 class="panel-title">
 					<a class="text-left collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-						2. What are the dimensions (especially the cleaning area) and weight of Sol-Bright Tech Robot?
+					2. 是否需要人工劳动力来完成智能清洁机器人的操作和控制？
 					</a>
 				</h4>
 			</div>
 			<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
 				<div class="panel-body text-left">
-					Sol-Bright Robot is capable of cleaning panel arrays of up to 5.35 m width and a length of up to 800m. Various scale can be customized for the special measurement of panel arrays. For most mono-crystalline panel designs, this means a single unit will be dedicated to a 75 KW array string. The system weighs less than 50 kg, and the modified material will further reduce this weight.
+				智能清洁机器人不需要人工劳动来进行工作，我们的智能清洁机器人可以在设定工作时间后由系统控制自动进行清洁工作。如果需要立即清洗，可在中控室内由一名操作工人进行远程操控。
 				</div>
 			</div>
 		</div>
@@ -45,16 +46,47 @@ active
 			<div class="panel-heading text-left" role="tab" id="headingThree">
 				<h4 class="panel-title">
 					<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-						3. How is it installed and how does it move through the module surface and array of modules? Can it be physically moved from one array of modules to others, or do we need a cleaning system per array?
+					3. 是否需要水，压缩空气或者外接电线来完成系统清洁？清洁机器人机身上的毛刷是否需要清洗？
 					</a>
 				</h4>
 			</div>
 			<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
 				<div class="panel-body text-left">
-					The robot is installed onto an array with the use of a row of rubber wheel that fixes the whole robot to the top of solar module-frame, and other rows of rubber wheels perpendicular to the panel surface will bear the weight averagely to keep the whole package in balance. These wheels are all set up to move along the module-frame so that robot does not have any rest weight on the panel surfaces themselves. Robot only can moved one array of modules to others which are parallel with former via bridge connection. This system is designed to be cost-effective with a single robot dedicated to each row. There are a number of reasons for this, the 1st being that all operational labor requirements are avoided. This is an often overlooked necessity of desert cleaning systems, when temperatures can remain at more than 40° during the night, and labor supply is scarce and expensive to maintain and supervise. Similar situation occurs in the developed countries, labors are not allowed to work under high temperature. The second is that by dedicating one system per row, the dangers of manually moving the system from one road to another, or running out of operational capacity during badly weather periods is completely avoided. 
+				不需要。每一台智能光伏清洁机器人都是独自运行，不需要另外搭建支架，电缆，水管，或是空气加压器，或任何其它此类外加装置。智能清洁机器人的清洁毛刷是由特殊材料制成，不会对灰尘产生吸附性，所以没有必要采取任何劳动力来清洁刷。
 				</div>
 			</div>
 		</div>
+
+		<div class="panel panel-default">
+			<div class="panel-heading text-left" role="tab" id="headingThree">
+				<h4 class="panel-title">
+					<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+					4. 机器人是否具有实时监控系统，用以检测机器人出现功能性故障？机器人是否可以加装其他的选择性功能？
+					</a>
+				</h4>
+			</div>
+			<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+				<div class="panel-body text-left">
+				升级的电子系统已经完全支持无线通信功能，所有的关键运行数据都可以实现远程查看。如有任意一台机器人出现故障，中控系统会显示是哪一台出现了故障。另外，最受欢迎的可选择性机器人附加功能是红外线扫描系统，它能够在机器人清洁光伏板的同时检测到光伏板的热斑及隐裂，从而为您挑出坏板。 
+				</div>
+			</div>
+		</div>
+
+		<div class="panel panel-default">
+			<div class="panel-heading text-left" role="tab" id="headingThree">
+				<h4 class="panel-title">
+					<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+					5. 机器人一次性充满电需要多长时间，充满电后能使用多久？电池是否可以替换？电池充电是否只有在特定的充电区域内进行，同时需要停止工作？
+					</a>
+				</h4>
+			</div>
+			<div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+				<div class="panel-body text-left">
+				我们的智能清洁机器人的一大突出的特点就是：自供电系统。该清洁机器人在机器上端自带太阳能电池板，与机器内部的充电电池相连。该内置充电电池在日光下三小时即可充满电，因而我们的机器人可以通过编程而在夜间进行清洁工作。充满电后，机器人可在太阳能板上进行往返清洁。同时，我们的自供电系统也能随时监测电池剩余电量，可计算出剩余电量可供清洁的距离。一旦剩余电量告急，机器人会自动返回其停靠台进行充电，从而不会停留在太阳能面板上而导致发电效率降低。 
+				</div>
+			</div>
+		</div>
+
 	</div>
 </div>
 
