@@ -36,7 +36,6 @@
 		}
 		body { 
 			/*font-family: 'Orbitron', sans-serif;*/
-			padding-top: 50px; 
 			background-color: #d7d6d6
 		}
 
@@ -89,6 +88,11 @@
 		}
 
 		.nav_container > .nav_button > a:hover{
+			color: white;
+			background-color: transparent;
+		}
+
+		#translation li a:hover {
 			color: white;
 			background-color: transparent;
 		}
@@ -326,19 +330,23 @@
 			margin-top: 5px;
 		}
 
+		#translation {
+			float: right;
+		}
+
 		#en img {
-			width: 50px;
+			width: 30px;
 		}
 
 		#chn img {
-			width: 50px;
+			width: 30px;
 		}
 	</style>
 </head>
 
 <body>
 
-<nav class="navbar navbar-inverse navbar-fixed-top topbar navbar-custom">
+<!--<nav class="navbar navbar-inverse navbar-fixed-top topbar navbar-custom">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -353,11 +361,11 @@
 			</a>
             </div>
 			<ul class="nav navbar-nav navbar-right">
-				<li id="chn"><a href="/cn"><img src="/images/ch.png"></img></a></li>
-				<li id="en"><a href="/"><img src="/images/en.png"></img></a></li>
+				<li id="chn" data-toggle="tooltip" data-placement="bottom" title="中文"><a href="/cn"><img src="/images/ch.png"></img></a></li>
+				<li id="en" data-toggle="tooltip" data-placement="bottom" title="English"><a href="/"><img src="/images/en.png"></img></a></li>
 			</ul>
          </div>
-</nav>
+</nav>-->
 
 <div class="container main_container">
 	<!--<div class="test_block">
@@ -384,7 +392,7 @@
 			<li role="presentation" id="{% block n1 %}{% end %}" class="nav_button"><a href="/cn">主页</a></li>
 		  	<li role="presentation" id="{% block n2 %}{% end %}" class="nav_button"><a href="/cn/company">我们的公司</a></li>
 			<li role="presentation" id="{% block n3 %}{% end %}" class="nav_button"><a href="/cn/product"> 产品</a></li>
-		  	<li role="presentation" id="{% block n4 %}{% end %}" class="nav_button"><a href="/cn/test">测试 &nbsp & &nbsp 结果</a></li>
+		  	<li role="presentation" id="{% block n4 %}{% end %}" class="nav_button"><a href="/cn/test">测试和结果</a></li>
 		  	<li role="presentation" id="{% block n5 %}{% end %}" class="nav_button"><a href="/cn/news">新闻</a></li>
 		  	<li role="presentation"	id="{% block n6 %}{% end %}" class="nav_button"><a href="/cn/faq">答疑</a></li>
 		  	<li role="presentation"	id="{% block n7 %}{% end %}" class="nav_button"><a href="/cn/contact">联系</a></li>
@@ -393,6 +401,12 @@
 			<!--<li role="presentation"	id="{% block n7 %}{% end %}" class="nav_button"><a href="/compute">CALCULATION</a></li>-->
 		</ul>
 		<div role="presentation" id="cal_li"><!--<a href="/cn/compute" class="btn btn-success btn-lg calbtn" role="button">计算器</a>--></div>
+		<div id="translation">
+			<ul class="nav navbar-nav navbar-right">
+				<li id="chn" class="t_button" data-toggle="tooltip" data-placement="bottom" title="中文"><a href="/cn"><img src="/images/ch.png"></img></a></li>
+				<li id="en" class="t_button" data-toggle="tooltip" data-placement="bottom" title="English"><a href="/"><img src="/images/en.png"></img></a></li>
+			</ul>
+		</div>
 		<div class="clearer">
 		</div>
 	</div>
@@ -433,5 +447,11 @@
 <script src="/js/blockmove.js"></script>
 {% block js %}
 {% end %}
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
 
 </html>

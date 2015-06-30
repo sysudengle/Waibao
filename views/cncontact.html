@@ -38,56 +38,102 @@ dt {
 
 h3 {
 	color: red;
+	font-weight: 900;
 }
 
 h4 {
 	text-align: left;
+	font-weight: 900;
+}
+
+.col-left {
+	width: 10%;
+	float: left;
+	margin-right: 1%;
+}
+
+.col-right {
+	width: 88%;
+	float: right;
+}
+
+.col-left p {
+	margin-bottom: 3px;
+}
+
+.col-right p {
+	margin-bottom: 3px;
 }
 </style>
 {% end %}
 
 {% block content %}
 <div class="test_block">		
-	<h2>Contact Information</h2>
+	<h2>联系方式</h2>
 
 	<h3>中国大陆地区</h3>
 	<h4>思拓光伏科技有限公司</h4>
 	<div class="row">
-		<div class="co1_title col-md-1">
+		<div class="co1_title col-left">
 			<p>地址:</p>
+			<p>Postcode:</p>
 			<p>联系电话:</p>
+			<p>&nbsp</p>
 			<p>&nbsp</p>
 			<p>移动电话:</p>
 			<p>邮箱地址:</p>
 		</div>
-		<div class="co1_content col-md-11">
+		<div class="co1_content col-right">
 			<p>北京东燕郊百世金谷国际产业基地 27-C</p>
-			<p>86-10-58412921</p>
+			<p>065201</p>
 			<p>86-10-52005067</p>
+			<p>86-10-52645536</p>
+			<p>86-10-52645538</p>
+			<p>86-10- 52645537</p>
 			<p>13691435279</p>
 			<p>xuzhangtianran@163.com</p>
 		</div>
 	</div>
 
-	<h3>欧洲，南美洲，台湾地区业务</h3>
+	<h3>欧洲，中东，非洲，巴西，台湾地区业务</h3>
 	<h4>威顿国际贸易有限公司</h4>
 	<div class="row">
-		<div class="co1_title col-md-1">
+		<div class="co1_title col-left">
 			<p>地址:</p>
 			<p>邮编:</p>
-			<p>联系地址:</p>
+			<p>联系电话:</p>
 			<p>传真地址:</p>
 			<p>邮箱地址:</p>
+			<p>网站:</p>
 		</div>
-		<div class="co1_content col-md-11">
+		<div class="co1_content col-right">
 			<p>北京市朝阳区五里桥一街非中心10号楼</p>
 			<p>100024</p>
 			<p>+86 10 85717788</p>
 			<p>+86 10 85717988</p>
 			<p>info@wyltonhk.com</p>
+			<p>www.wylton.com</p>
 		</div>
 	</div>
 
+	<h3>北美地区业务</h3>
+	<h4>Hash Machinery Systems</h4>
+	<div class="row">
+		<div class="co1_title col-left">
+			<p>联系地址:</p>
+			<p>联系电话:</p>
+			<p>传真地址:</p>
+			<p>邮箱地址:</p>
+			<p>网站:</p>
+		</div>
+		<div class="co1_content col-right">
+			<p>343 Preston St. 11th Floor, Ottawa, Ontario, Canada K1S 1N4</p>
+			<p>+1-613-884 3388</p>
+			<p>+1-613-491 0426</p>
+			<p>info@hashmachinery.com</p>
+			<p>www.hashmachinery.com</p>
+		</div>
+	</div>
 	<!--
 	<dl class="dl-horizontal">
 		<dt>Tel:</dt>

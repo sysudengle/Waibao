@@ -7,7 +7,7 @@
 		{% end %}
 	</title>
   	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
 	<link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
 	<link rel="stylesheet" href="//blueimp.github.io/Bootstrap-Image-Gallery/css/bootstrap-image-gallery.css">
@@ -23,6 +23,7 @@
 		}
 		p {
 			font-family: 'helvtica';
+			/*font-size: 19px;*/
 		}
 		blockquote {
 			font-family: 'helvtica', Helvetica, Arial, sans-serif;
@@ -36,7 +37,7 @@
 		}
 		body { 
 			font-family: 'helvtica';
-			padding-top: 50px; 
+			/*padding-top: 50px; */
 			background-color: #d7d6d6
 		}
 
@@ -93,6 +94,10 @@
 			background-color: transparent;
 		}
 
+		#translation li a:hover {
+			color: white;
+			background-color: transparent;
+		}
 		.nav_button {
 			font-size: 15px;
 			font-weight: 600;
@@ -324,12 +329,16 @@
 			margin-top: 5px;
 		}
 
+		#translation {
+			float: right;
+		}
+
 		#chn img {
-			width: 50px;
+			width: 30px;
 		}
 
 		#en img {
-			width: 50px;
+			width: 30px;
 		}
 
 		#power {
@@ -341,7 +350,7 @@
 
 <body>
 
-<nav class="navbar navbar-inverse navbar-fixed-top topbar navbar-custom">
+<!--<nav class="navbar navbar-inverse navbar-fixed-top topbar navbar-custom">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -356,21 +365,23 @@
 			</a>
             </div>
 			<ul class="nav navbar-nav navbar-right">
-				<li id="chn"><a href="/cn"><img src="/images/ch.png"></img></a></li>
-				<li id="en"><a href="/"><img src="/images/en.png"></img></a></li>
+				<li id="chn" data-toggle="tooltip" data-placement="bottom" title="中文"><a href="/cn"><img src="/images/ch.png"></img></a></li>
+				<li id="en" data-toggle="tooltip" data-placement="bottom" title="English"><a href="/"><img src="/images/en.png"></img></a></li>
 			</ul>
          </div>
-</nav>
+</nav>-->
 
 <div class="container main_container">
 	<!--<div class="test_block">
 		<img src="/images/logo.png" />
 	</div>-->
 
+
 	<div class="test_block nav_block">
 		<!--<div class="logo_wrapper">
 			<img id="logo" src="/images/logoo.jpg" />
 		</div>-->
+
 		<ul class="nav nav-pills nav_container">
 			<div id="moving_block"></div>
 			<!--<li role="presentation" class="nav_button {% block l1 %}{% end %}"><a href="/">HOME</a></li>
@@ -387,15 +398,21 @@
 			<li role="presentation" id="{% block n1 %}{% end %}" class="nav_button"><a href="/">Home</a></li>
 		  	<li role="presentation" id="{% block n2 %}{% end %}" class="nav_button"><a href="/company">Company</a></li>
 			<li role="presentation" id="{% block n3 %}{% end %}" class="nav_button"><a href="/product"> Product</a></li>
-		  	<li role="presentation" id="{% block n4 %}{% end %}" class="nav_button"><a href="/test">Test &nbsp & &nbsp Result</a></li>
+		  	<li role="presentation" id="{% block n4 %}{% end %}" class="nav_button"><a href="/test">Test & Result</a></li>
 		  	<li role="presentation" id="{% block n5 %}{% end %}" class="nav_button"><a href="/news">News</a></li>
-		  	<li role="presentation"	id="{% block n6 %}{% end %}" class="nav_button"><a href="/faq">Faq</a></li>
+		  	<li role="presentation"	id="{% block n6 %}{% end %}" class="nav_button"><a href="/faq">FAQ</a></li>
 		  	<li role="presentation"	id="{% block n7 %}{% end %}" class="nav_button"><a href="/contact">Contact</a></li>
 			
 
 			<!--<li role="presentation"	id="{% block n7 %}{% end %}" class="nav_button"><a href="/compute">CALCULATION</a></li>-->
 		</ul>
 		<div role="presentation" id="cal_li"><!--<a href="/compute" class="btn btn-success btn-lg calbtn" role="button">ROI Caculator</a>--></div>
+		<div id="translation">
+			<ul class="nav navbar-nav navbar-right">
+				<li id="chn" class="t_button" data-toggle="tooltip" data-placement="bottom" title="中文"><a href="/cn"><img src="/images/ch.png"></img></a></li>
+				<li id="en" class="t_button" data-toggle="tooltip" data-placement="bottom" title="English"><a href="/"><img src="/images/en.png"></img></a></li>
+			</ul>
+		</div>
 		<div class="clearer">
 		</div>
 	</div>
@@ -429,14 +446,21 @@
 </div>
 </body>
 
+
 <script src="/js/jquery.min.js"></script>
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
 <script src="//blueimp.github.io/Bootstrap-Image-Gallery/js/bootstrap-image-gallery.js"></script>
 <script src="/js/blockmove.js"></script>
 {% block js %}
 {% end %}
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
 
 </html>

@@ -21,6 +21,7 @@ $(function() {
 		$(this).css({'color' : 'white'});	
 	});	
 
+
 	//$('.nav_container li a').mouseleave(function(){
 	//	chosen = $('#nl')
     //    left = chosen.position().left;  

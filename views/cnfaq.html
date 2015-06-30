@@ -11,9 +11,18 @@ Sol-Bright Technology
 active
 {% end %}
 
+{% block css %}
+<style>
+.faq_block h4 > a,
+.faq_block div {
+	font-size: 19px;
+}
+</style>
+{% end %}
+
 {% block content %}
 <div class="test_block">		
-	<div class="panel-group text_block" id="accordion" role="tablist" aria-multiselectable="true">
+	<div class="panel-group text_block faq_block" id="accordion" role="tablist" aria-multiselectable="true">
 		<div class="panel panel-default">
 			<div class="panel-heading text-left" role="tab" id="headingOne">
 				<h4 class="panel-title">
